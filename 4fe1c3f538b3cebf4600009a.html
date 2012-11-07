@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=72mQMFXIL4s" ], {});
+popcorn.pop({
+  "start": 0,
+  "end": 18.933,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": null,
+  "text": "AMZROU CARS",
+  "left": 41,
+  "top": 2,
+  "classes": "12"
+});
+popcorn.pop({
+  "start": 5.242,
+  "end": 18.446,
+  "target": "pop-container",
+  "exit": 0.3,
+  "text": "Entretien Rapide et soigné",
+  "icon": "images/heart.png",
+  "left": 11,
+  "top": 11,
+  "link": "http://amzrou.tk"
+});
+popcorn.pop({
+  "start": 10.241,
+  "end": 18.319,
+  "target": "pop-container",
+  "exit": 0.3,
+  "left": 64,
+  "top": 12,
+  "icon": "images/thumbsup.png",
+  "text": "Diagnostic Electronique",
+  "link": "http://amzrou.tk"
+});
+popcorn.pop({
+  "start": 12.155,
+  "end": 18.326,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/money.png",
+  "text": "Petit prix garanti!",
+  "left": 11,
+  "top": 85
+});
+popcorn.pop({
+  "start": 17.962,
+  "end": 18.962,
+  "target": "pop-container",
+  "text": "Rendez Vous 0486-538-178",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 85,
+  "left": 62,
+  "icon": "images/time.png"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

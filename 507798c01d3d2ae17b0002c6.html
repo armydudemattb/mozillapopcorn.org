@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=HiISYKvq5PM&amp;butteruid=1350015187370" ], {});
+popcorn.pop({
+  "start": 44.137,
+  "end": 60.407,
+  "target": "pop-container",
+  "exit": 0.3,
+  "text": "Ayudanos a difundir nuestro proyecto! siguenos en Facebook",
+  "icon": "images/heart.png",
+  "left": "30",
+  "top": "70",
+  "link": "https://www.facebook.com/Vipitel/app_293819070709736"
+});
+popcorn.pop({
+  "start": 92.762,
+  "end": 106.601,
+  "target": "pop-container",
+  "exit": 0.3,
+  "left": "30",
+  "top": "30",
+  "icon": "images/thumbsup.png",
+  "text": "No lo pienses mas! Es importante siguenos en Twitter ",
+  "link": "https://twitter.com/Vipitel"
+});
+popcorn.pop({
+  "start": 144.005,
+  "end": 160.089,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/money.png",
+  "text": "Siguenos!",
+  "left": "20",
+  "top": "80",
+  "link": "https://www.facebook.com/Vipitel/app_293819070709736"
+});
+popcorn.pop({
+  "start": 1.683,
+  "end": 19.45,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/error.png",
+  "text": "Registrate",
+  "left": "70",
+  "top": "40",
+  "link": "www.vipitel.blogspot.com"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

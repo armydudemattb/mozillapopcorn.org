@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.mp4?butteruid=1349666689009" , "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.ogv?butteruid=1349666689010" , "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.webm?butteruid=1349666689011" ], {});
+popcorn.googlemap({
+  "start": "0",
+  "end": 1.75,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 11,
+  "lat": "",
+  "lng": "",
+  "location": "San Francisco",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 1.75,
+  "end": 3,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 12,
+  "lat": "",
+  "lng": "",
+  "location": "Los Angeles",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 3,
+  "end": 5,
+  "target": "above-right",
+  "type": "STAMEN-WATERCOLOR",
+  "zoom": 3,
+  "lat": "",
+  "lng": "",
+  "location": "alaska",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 35.75,
+  "end": 44.5,
+  "target": "above-right",
+  "type": "ROADMAP",
+  "zoom": 3,
+  "lat": "",
+  "lng": "",
+  "location": "alaska",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 5,
+  "end": 14.5,
+  "target": "above-right",
+  "type": "ROADMAP",
+  "zoom": 4,
+  "lat": "37.85750735116863",
+  "lng": "-99.49218787500001",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 45.5,
+  "end": 55,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 8,
+  "lat": "",
+  "lng": "",
+  "location": "haiti",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.text({
+  "start": 25.75,
+  "end": 35.5,
+  "target": "above-right",
+  "text": "&lt;h1&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Earthquake_engineering&#34;&gt;Click here to learn about earthquake engineering.&lt;/a&gt;&lt;/h1&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 15,
+  "end": 25,
+  "target": "above-right",
+  "text": "&lt;h1&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/1906_San_Francisco_earthquake&#34;&gt;Click here to learn about the great earthquake of 1906&lt;/a&gt;.&lt;/h1&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.image({
+  "start": 15,
+  "end": 25,
+  "target": "above-right",
+  "href": "http://en.wikipedia.org/wiki/File:Post-and-Grant-Avenue.-Look.jpg",
+  "src": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Post-and-Grant-Avenue.-Look.jpg/800px-Post-and-Grant-Avenue.-Look.jpg",
+  "text": ""
+});
+popcorn.image({
+  "start": 25.75,
+  "end": 35.5,
+  "target": "above-right",
+  "href": "http://en.wikipedia.org/wiki/File:Snapshot_of_earthquake-like_crash_testing.jpg",
+  "src": "http://upload.wikimedia.org/wikipedia/commons/e/e7/Snapshot_of_earthquake-like_crash_testing.jpg",
+  "text": ""
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

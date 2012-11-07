@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?NR=1&amp;v=7opcbOHyyTY&amp;feature=endscreen&amp;butteruid=1342106352058" ], {});
+popcorn.pop({
+  "start": 0.07,
+  "end": 2.266,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/women.png",
+  "text": "Raven and Taylor here",
+  "left": 51,
+  "top": 21
+});
+popcorn.pop({
+  "start": 3.939,
+  "end": 5.803,
+  "target": "pop-container",
+  "exit": 0.3,
+  "text": "Those whitening strips really work!",
+  "icon": "images/virus.png",
+  "left": "30",
+  "top": "70"
+});
+popcorn.pop({
+  "start": 7.248,
+  "end": 8.739,
+  "target": "pop-container",
+  "exit": 0.3,
+  "left": "30",
+  "top": 71,
+  "icon": "images/tv.png",
+  "text": "Say something, Taylor! "
+});
+popcorn.pop({
+  "start": 9.765,
+  "end": 11.28,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/star.png",
+  "text": "Shhh, just look at my smile",
+  "left": "20",
+  "top": "80"
+});
+popcorn.pop({
+  "start": 12.468,
+  "end": 14.123,
+  "target": "pop-container",
+  "text": "What am I doing here?",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 32,
+  "left": 58,
+  "icon": "images/earth.png"
+});
+popcorn.pop({
+  "start": 15.544,
+  "end": 17.246,
+  "target": "pop-container",
+  "text": "Alright, enough!",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/eye.png"
+});
+popcorn.pop({
+  "start": 19.273,
+  "end": 21.371,
+  "target": "pop-container",
+  "text": "Ummmm, I think we should do some pre-production planning!",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 80,
+  "left": 20,
+  "icon": "images/thumbsup.png"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

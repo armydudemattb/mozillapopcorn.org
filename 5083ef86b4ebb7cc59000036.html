@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=3lAp0C9IJBI&amp;feature=youtu.be&amp;butteruid=1350823415858" , "https://maps.google.com/maps?hl=es&amp;q=amsterdam%20brussels%20train&amp;psj=1&amp;bav=on.2,or.r_gc.r_pw.r_qf.&amp;bpcl=35466521&amp;biw=1066&amp;bih=681&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=wl&amp;butteruid=1350823415859" , "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.webm?butteruid=1350823415860" ], {});
+popcorn.googlemap({
+  "start": 0.684,
+  "end": 2.755,
+  "target": "above-right",
+  "type": "SATELLITE",
+  "zoom": 12,
+  "lat": "",
+  "lng": "",
+  "location": "Amsterdam",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 1.517,
+  "end": 3.8,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 12,
+  "lat": "",
+  "lng": "",
+  "location": "Brussels",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

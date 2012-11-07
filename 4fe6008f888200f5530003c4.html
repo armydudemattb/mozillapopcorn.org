@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/robots/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Robots</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Jolly+Lodger|Bangers|Lato|Fredericka+the+Great|Lovers+Quarrel' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+    <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/speak/popcorn.speak.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titles/popcorn.titles.robots.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+  <div class="inner-container">
+    <div class="wrapper">
+      <header>
+        <h2 id="logo" class="logo on">Robots in everytown</h2>
+      </header>
+      <div role="main">
+        <section id="video-container" class="video-container">
+          <div id="video" data-butter="media"
+            data-butter-media-controls="true"
+            style="width:800px; height:500px;"></div>
+          <div class="video-overlay">
+            <div class="text-overlay">
+              <div id="top-title" data-butter="target"></div>
+              <div id="mid-title" data-butter="target"></div>
+              <div id="bottom-title" data-butter="target"></div>
+            </div>
+          </div>
+          <div id="video-overlay" class="video-overlay" data-butter="target"></div>
+        </section>
+        <section class="cf suplementary">
+          <article id="Supplementary1" class="block" data-butter="target">
+          </article>
+          <article class="block">
+          </article>
+          <article id="Supplementary2" class="block" data-butter="target">
+          </article>
+        </section>
+      </div>
+      <footer>
+       <p>All video and images courtesy Public Domain material at <a href="http://www.archive.org">The Internet Archive</a>
+        <br>Music courtesy the <a href="http://www.freemusicarchive.org"> Free Music Archive</a>
+        <br>Wake <em>"Steppin"</em>
+        <br><img src="http://i.creativecommons.org/l/by/3.0/88x31.png"></p>
+      </footer>
+    </div><!--.wrapper-->
+  </div><!--.inner-container-->
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://youtu.be/3HiRjblCypw?butteruid=1340510408950" ], {});
+popcorn.titles({
+  "start": 0,
+  "end": 3.18,
+  "target": "top-title",
+  "text": "    Robot... or not?",
+  "styles": "Top Title",
+  "transitionSpeed": "slow"
+});
+popcorn.speak({
+  "start": 6.36,
+  "end": 9.541,
+  "target": "top-title",
+  "text": "Hummmm",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "30",
+  "speed": "125",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.photo({
+  "start": 25.628,
+  "end": 28.996,
+  "target": "video-overlay",
+  "src": "http://blog.dreamhost.com/wp-content/uploads/2011/03/angryrobot.jpg",
+  "href": "",
+  "width": "311",
+  "height": "249",
+  "top": "51",
+  "left": "133"
+});
+popcorn.speak({
+  "start": 39.284,
+  "end": 49.386,
+  "target": "top-title",
+  "text": "Mannekins are not robots. Somebody has made a mistake.",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "3",
+  "pitch": "25",
+  "speed": "110",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 76.324,
+  "end": 86.426,
+  "target": "top-title",
+  "text": "Hummmmm",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "50",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 112.785,
+  "end": 114.243,
+  "target": "top-title",
+  "text": "mannekins",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "20",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 116.91,
+  "end": 118.278,
+  "target": "top-title",
+  "text": "mannekins",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "20",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 171.48,
+  "end": 172.426,
+  "target": "top-title",
+  "text": "No you're not.",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "50",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 176.079,
+  "end": 177.385,
+  "target": "top-title",
+  "text": "No you're not.",
+  "showText": false,
+  "amplitude": "250",
+  "wordgap": "5",
+  "pitch": "50",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 151.986,
+  "end": 152.232,
+  "target": "top-title",
+  "text": "bleep",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "2",
+  "pitch": "10",
+  "speed": "120",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 200.725,
+  "end": 202.474,
+  "target": "top-title",
+  "text": "Remember folks.",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "0",
+  "pitch": "50",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 9.541,
+  "end": 15.34,
+  "target": "top-title",
+  "text": "they look prettee humany to me.",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "30",
+  "speed": "125",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 21.33,
+  "end": 24.295,
+  "target": "top-title",
+  "text": "Is that supposed to bee a robot?",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "60",
+  "speed": "150",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.photo({
+  "start": 27.125,
+  "end": 30.392,
+  "target": "video-overlay",
+  "src": "http://ecx.images-amazon.com/images/I/318%2B2u3s0gL._SL500_AA280_.jpg",
+  "href": "",
+  "width": 257,
+  "height": 257,
+  "top": 185,
+  "left": 379
+});
+popcorn.speak({
+  "start": 80.414,
+  "end": 85.35,
+  "target": "top-title",
+  "text": "I still don't believe you.",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "50",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 171.464,
+  "end": 172.485,
+  "target": "top-title",
+  "text": "No you're not.",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "90",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 176.1,
+  "end": 177.698,
+  "target": "top-title",
+  "text": "No you're not.",
+  "showText": false,
+  "amplitude": "250",
+  "wordgap": "5",
+  "pitch": "20",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.photo({
+  "start": 39.335,
+  "end": 49.457,
+  "target": "video-overlay",
+  "src": "http://www.germes-online.com/direct/dbimage/50244448/Fashion_Male_Mannequins.jpg",
+  "href": "",
+  "width": "150",
+  "height": "150",
+  "top": 227,
+  "left": 131
+});
+popcorn.speak({
+  "start": 131.882,
+  "end": 138.148,
+  "target": "top-title",
+  "text": "Robots or not, I do kind of like this song.",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "2",
+  "pitch": "10",
+  "speed": "120",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 140.869,
+  "end": 150.328,
+  "target": "top-title",
+  "text": "Especially the bits that go bleep bloop bleep bloop. They remind me of my mother.",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "2",
+  "pitch": "10",
+  "speed": "120",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 151.152,
+  "end": 151.637,
+  "target": "top-title",
+  "text": "bleep",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "2",
+  "pitch": "10",
+  "speed": "120",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 151.726,
+  "end": 152.266,
+  "target": "top-title",
+  "text": "bleep",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "2",
+  "pitch": "10",
+  "speed": "120",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 193.449,
+  "end": 195.216,
+  "target": "top-title",
+  "text": "me too. These mannekins still freak me out.",
+  "showText": false,
+  "amplitude": "130",
+  "wordgap": "2",
+  "pitch": "140",
+  "speed": "140",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 202.754,
+  "end": 203.754,
+  "target": "top-title",
+  "text": "mannekins",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "0",
+  "pitch": "50",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 206.598,
+  "end": 208.509,
+  "target": "top-title",
+  "text": "robots.",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "0",
+  "pitch": "50",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 211.241,
+  "end": 212.712,
+  "target": "top-title",
+  "text": "There is a big difference",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "2",
+  "pitch": "50",
+  "speed": "125",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 25.441,
+  "end": 33.111,
+  "target": "top-title",
+  "text": "Where are the lazers? Where are the metal claws?",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "60",
+  "speed": "150",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 62.668,
+  "end": 65.421,
+  "target": "top-title",
+  "text": "Oh god! It's moving!",
+  "showText": false,
+  "amplitude": "300",
+  "wordgap": "0",
+  "pitch": "85",
+  "speed": "200",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 67.532,
+  "end": 71.227,
+  "target": "top-title",
+  "text": "It's totallee freaking me out!",
+  "showText": false,
+  "amplitude": "300",
+  "wordgap": "0",
+  "pitch": "85",
+  "speed": "200",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 85.303,
+  "end": 88.499,
+  "target": "top-title",
+  "text": "I'm prettee sure you are mannekins.",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "50",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 104.455,
+  "end": 106.25,
+  "target": "top-title",
+  "text": "mannekins",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "0",
+  "pitch": "50",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 108.806,
+  "end": 109.806,
+  "target": "top-title",
+  "text": "Mannekins",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "0",
+  "pitch": "50",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 120.719,
+  "end": 121.719,
+  "target": "top-title",
+  "text": "See how we fixed that for you?",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "2",
+  "pitch": "90",
+  "speed": "135",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 171.474,
+  "end": 172.485,
+  "target": "top-title",
+  "text": "No you're not.",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "20",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 176.11,
+  "end": 177.949,
+  "target": "top-title",
+  "text": "No you're not.",
+  "showText": false,
+  "amplitude": "250",
+  "wordgap": "5",
+  "pitch": "90",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 180.589,
+  "end": 181.589,
+  "target": "top-title",
+  "text": "Let us dispense with the lies.",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "2",
+  "pitch": "130",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.photo({
+  "start": 40.901,
+  "end": 49.506,
+  "target": "video-overlay",
+  "src": "http://img151.imageshack.us/img151/7545/notequal.jpg",
+  "href": "",
+  "width": "150",
+  "height": "150",
+  "top": 229,
+  "left": 318
+});
+popcorn.photo({
+  "start": 135.193,
+  "end": 138.178,
+  "target": "video-overlay",
+  "src": "http://lawyersusaonline.com/benchmarks/files/2012/05/Facebook-like-button.png",
+  "href": "",
+  "width": "150",
+  "height": "150",
+  "top": 359,
+  "left": 334
+});
+popcorn.photo({
+  "start": 147.374,
+  "end": 150.286,
+  "target": "video-overlay",
+  "src": "http://www.tattoosales.com/tattooimages/3002.jpg",
+  "href": "",
+  "width": 369,
+  "height": 349,
+  "top": 72,
+  "left": 215
+});
+popcorn.speak({
+  "start": 188.284,
+  "end": 190.15,
+  "target": "top-title",
+  "text": "I give up. I'm out of here.",
+  "showText": false,
+  "amplitude": "250",
+  "wordgap": "2",
+  "pitch": "10",
+  "speed": "110",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 152.143,
+  "end": 153.148,
+  "target": "top-title",
+  "text": "bloop",
+  "showText": false,
+  "amplitude": "200",
+  "wordgap": "2",
+  "pitch": "10",
+  "speed": "120",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.flickr({
+  "start": 202.853,
+  "end": 206.388,
+  "target": "top-title",
+  "userid": "",
+  "tags": "mannequin",
+  "username": "",
+  "apikey": "",
+  "height": "200",
+  "width": "200",
+  "padding": "0",
+  "border": "0",
+  "numberofimages": "6"
+});
+popcorn.flickr({
+  "start": 206.655,
+  "end": 210.439,
+  "target": "top-title",
+  "userid": "",
+  "tags": "robot",
+  "username": "",
+  "apikey": "",
+  "height": "200",
+  "width": "200",
+  "padding": "0",
+  "border": "0",
+  "numberofimages": "8"
+});
+popcorn.photo({
+  "start": 41.721,
+  "end": 49.554,
+  "target": "video-overlay",
+  "src": "http://www.theage.com.au/ffximage/2007/07/06/ROBOTS_narrowweb__300x345,0.jpg",
+  "href": "",
+  "width": "150",
+  "height": "150",
+  "top": 228,
+  "left": 501
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://youtu.be/wCmADAdHBwI?butteruid=1351849231750" ], {});
+popcorn.pop({
+  "start": 1.741,
+  "end": 6.036,
+  "target": "pop-container",
+  "text": "An Instagram still from the same place",
+  "link": "http://instagram.com/p/Rk6AO0OEGF/",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 50,
+  "left": "50",
+  "icon": "images/thumbsup.png"
+});
+popcorn.pop({
+  "start": 6.558,
+  "end": 8.957,
+  "target": "pop-container",
+  "text": "Skogskyrkogården on the map",
+  "link": "&lt;iframe width=&#34;425&#34; height=&#34;350&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; src=&#34;https://maps.google.com/maps/ms?ll=60.618779,15.642493&amp;amp;spn=0.001848,0.005681&amp;amp;t=h&amp;amp;z=18&amp;amp;msa=0&amp;amp;msid=207515319912682322839.0004cdaaeac4ba0057d36&#34;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;View &lt;a href=&#34;https://maps.google.com/maps/ms?ll=60.618779,15.642493&amp;amp;spn=0.001848,0.005681&amp;amp;t=h&amp;amp;z=18&amp;amp;msa=0&amp;amp;msid=207515319912682322839.0004cdaaeac4ba0057d36&amp;amp;source=embed&#34; style=&#34;color:#0000FF;text-align:left&#34;&gt;Kurtan&lt;/a&gt; in a larger map&lt;/small&gt;",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": ""
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

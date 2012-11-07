@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/newscaster/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>News Caster</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic|Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/plugins/titlecard/popcorn.titlecard.css">
+  <link rel="stylesheet" href="../shared/plugins/shrink/popcorn.shrink.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+  <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titlecard/popcorn.titlecard.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h2 class="logo">knn report</h2>
+    <article class="cube-container">
+      <section class="cube">
+        <div>
+          <div class="cube-side">
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-top"></div>
+        <div class="cube-bottom"></div>
+        <div class="cube-shadow"></div>
+      </section>
+    </article>
+  </header>
+  <div role="main">
+    <section id="video-container" class="video-container">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"
+        style="width:800px; height:450px;"></div>
+      <div id="video-overlay" class="video-overlay" data-butter="target">
+        <div id="upper-corner" class="upper-corner" data-butter="target"></div>
+      </div>
+    </section>
+    <section class="cf suplementary">
+      <article class="block" id="Area1" data-butter="target">
+      </article>
+      <article class="block">
+      </article>
+      <article class="block" id="Area2" data-butter="target">
+      </article>
+    </section>
+  </div>
+</div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=f7CYFBHhlG4&amp;feature=plcp&amp;butteruid=1350827597071" , "http://soundcloud.com/unicorn-playing/furtherset-01-kweil-1?butteruid=1350827597072" , "http://www.youtube.com/watch?v=f7CYFBHhlG4&amp;feature=plcp&amp;butteruid=1350827597073" ], {});
+popcorn.titlecard({
+  "start": 2.295,
+  "end": 5.213,
+  "target": "video-overlay",
+  "title": "Popcorn rules!",
+  "subheading": "New Mozilla project"
+});
+popcorn.zoink({
+  "start": 5.601,
+  "end": 6.997,
+  "target": "video-overlay",
+  "text": "I am mE",
+  "type": "thought",
+  "triangle": "bottom right",
+  "flip": false,
+  "classes": "none",
+  "order": "1",
+  "top": 38,
+  "left": 275,
+  "width": "200"
+});
+popcorn.titlecard({
+  "start": 14.792,
+  "end": 18.998,
+  "target": "upper-corner",
+  "title": "enjoying yourself ?",
+  "subheading": "So"
+});
+popcorn.photo({
+  "start": 24.562,
+  "end": 29.511,
+  "target": "video-overlay",
+  "src": "http://distilleryimage10.s3.amazonaws.com/2be7e2440f2811e2a84922000a1e8bad_7.jpg",
+  "href": "",
+  "width": 444,
+  "height": 468,
+  "top": 7,
+  "left": 845
+});
+popcorn.googlemap({
+  "start": 21.39,
+  "end": 30,
+  "target": "upper-corner",
+  "type": "STAMEN-TONER",
+  "zoom": 8,
+  "lat": "52.474133959466634",
+  "lng": "5.856428882421811",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.photo({
+  "start": 2.284,
+  "end": 10.369,
+  "target": "video-overlay",
+  "src": "http://static.tumblr.com/htgtxeo/G5Emarb1g/headerfinal.gif",
+  "href": "http://www.coastalbreak.nl/",
+  "width": "205",
+  "height": "167",
+  "top": "-32",
+  "left": "9"
+});
+popcorn.photo({
+  "start": 22.006,
+  "end": 29.656,
+  "target": "video-overlay",
+  "src": "http://distilleryimage5.s3.amazonaws.com/f1d75216162e11e2952822000a1c02a0_7.jpg",
+  "href": "",
+  "width": "423",
+  "height": "423",
+  "top": "-5",
+  "left": "-454"
+});
+popcorn.googlemap({
+  "start": 6.816,
+  "end": 17.076,
+  "target": "video-overlay",
+  "type": "STAMEN-TONER",
+  "zoom": 10,
+  "lat": "",
+  "lng": "",
+  "location": "new york",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.text({
+  "start": 4.278,
+  "end": 6.779,
+  "target": "Area2",
+  "text": "So go on. Try it.",
+  "escape": false,
+  "multiline": false
+});
+popcorn.photo({
+  "start": 10.205,
+  "end": 19.94,
+  "target": "video-overlay",
+  "src": "http://static.tumblr.com/htgtxeo/G5Emarb1g/headerfinal.gif",
+  "href": "http://www.coastalbreak.nl/",
+  "width": "801",
+  "height": "150",
+  "top": 471.99998474121094,
+  "left": -4
+});
+popcorn.text({
+  "start": 0,
+  "end": 4.042,
+  "text": "Interactive stuff",
+  "target": "Area2",
+  "escape": true,
+  "multiline": true
+});
+popcorn.photo({
+  "start": 19.903,
+  "end": 27.481,
+  "target": "video-overlay",
+  "src": "http://amazingoverlord.com/earth-test.gif",
+  "href": "http://soundcloud.com/unicorn-playing/furtherset-01-kweil-1",
+  "width": 798,
+  "height": 411,
+  "top": 426.99998474121094,
+  "left": 2
+});
+popcorn.titlecard({
+  "start": 6.87,
+  "end": 11.347,
+  "target": "video-overlay",
+  "title": "Go on just give it a try !",
+  "subheading": "Scroll the map"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

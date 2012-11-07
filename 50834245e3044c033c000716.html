@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/robots/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Robots</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Jolly+Lodger|Bangers|Lato|Fredericka+the+Great|Lovers+Quarrel' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+    <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/speak/popcorn.speak.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titles/popcorn.titles.robots.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+  <div class="inner-container">
+    <div class="wrapper">
+      <header>
+        <h2 id="logo" class="logo on">Robots in everytown</h2>
+      </header>
+      <div role="main">
+        <section id="video-container" class="video-container">
+          <div id="video" data-butter="media"
+            data-butter-media-controls="true"
+            style="width:800px; height:500px;"></div>
+          <div class="video-overlay">
+            <div class="text-overlay">
+              <div id="top-title" data-butter="target"></div>
+              <div id="mid-title" data-butter="target"></div>
+              <div id="bottom-title" data-butter="target"></div>
+            </div>
+          </div>
+          <div id="video-overlay" class="video-overlay" data-butter="target"></div>
+        </section>
+        <section class="cf suplementary">
+          <article id="Supplementary1" class="block" data-butter="target">
+          </article>
+          <article class="block">
+          </article>
+          <article id="Supplementary2" class="block" data-butter="target">
+          </article>
+        </section>
+      </div>
+      <footer>
+       <p>All video and images courtesy Public Domain material at <a href="http://www.archive.org">The Internet Archive</a>
+        <br>Music courtesy the <a href="http://www.freemusicarchive.org"> Free Music Archive</a>
+        <br>Wake <em>"Steppin"</em>
+        <br><img src="http://i.creativecommons.org/l/by/3.0/88x31.png"></p>
+      </footer>
+    </div><!--.wrapper-->
+  </div><!--.inner-container-->
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://videos-cdn.mozilla.net/serv/webmademovies/robots.mp4?butteruid=1350783235648" , "http://videos-cdn.mozilla.net/serv/webmademovies/robots.webm?butteruid=1350783235649" ], {});
+popcorn.flickr({
+  "start": 24.569,
+  "end": 31.03,
+  "text": "This is a test.",
+  "target": "top-title",
+  "tags": "hot rod, sedan, classic",
+  "height": "200",
+  "width": "200",
+  "padding": "0",
+  "border": "0",
+  "numberofimages": "10",
+  "userid": "",
+  "username": "",
+  "apikey": ""
+});
+popcorn.titles({
+  "start": "0",
+  "end": 2.553,
+  "target": "top-title",
+  "text": "INVASION OF THE  DALEKS!",
+  "styles": "Top Title",
+  "transitionSpeed": "slow"
+});
+popcorn.titles({
+  "start": 57.943,
+  "end": 63.438,
+  "target": "top-title",
+  "text": "Daleks Have won. Surrender or Die.",
+  "styles": "Top Title",
+  "transitionSpeed": "normal"
+});
+popcorn.speak({
+  "start": 69.67,
+  "end": 69.67,
+  "target": "video"
+});
+popcorn.speak({
+  "start": 36.58,
+  "end": 40.97,
+  "target": "top-title",
+  "text": "must destroy gasifiers!",
+  "showText": false,
+  "amplitude": "",
+  "wordgap": "0",
+  "pitch": "0",
+  "speed": "0",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.flickr({
+  "start": 13.819,
+  "end": 17.428,
+  "target": "video",
+  "userid": "",
+  "tags": "gas pump, oil well",
+  "username": "",
+  "apikey": "",
+  "height": "200",
+  "width": "200",
+  "padding": "0",
+  "border": "0",
+  "numberofimages": "10"
+});
+popcorn.speak({
+  "start": 4.39,
+  "end": 7.088,
+  "target": "top-title",
+  "text": "The human beings",
+  "showText": false,
+  "amplitude": "1000",
+  "wordgap": "-9",
+  "pitch": "45",
+  "speed": "100",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.googlemap({
+  "start": 18.599,
+  "end": 24.484,
+  "target": "video-overlay",
+  "type": "STAMEN-TONER",
+  "zoom": 11,
+  "lat": "38.185417135968265",
+  "lng": "-84.89326104062503",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.photo({
+  "start": 33.036,
+  "end": 36.905,
+  "target": "video-overlay",
+  "src": "http://www.motherearthnews.com/uploadedImages/articles/issues/2012-04-01/Wayne-Keith-Wood-Stove.jpg",
+  "href": "",
+  "width": "400",
+  "height": "461",
+  "top": 5,
+  "left": 187
+});
+popcorn.speak({
+  "start": 58.496,
+  "end": 60.447,
+  "target": "video",
+  "text": "EXPLAIN? EXPLAIN?",
+  "showText": false,
+  "amplitude": "147",
+  "wordgap": "0",
+  "pitch": "500",
+  "speed": "0",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.flickr({
+  "start": 12.128,
+  "end": 15.575,
+  "target": "video-overlay",
+  "userid": "",
+  "tags": "dalek",
+  "username": "",
+  "apikey": "",
+  "height": "200",
+  "width": "200",
+  "padding": "0",
+  "border": "0",
+  "numberofimages": "7"
+});
+popcorn.speak({
+  "start": 7.088,
+  "end": 9.43,
+  "target": "top-title",
+  "text": "They must be exterrminated! Exterminate??",
+  "showText": false,
+  "amplitude": "",
+  "wordgap": "9",
+  "pitch": "450",
+  "speed": "111",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 14.112,
+  "end": 16.258,
+  "target": "top-title",
+  "text": "The Dahleks have need of all fossil fuels.  Our invasion will be centered at this location",
+  "showText": false,
+  "amplitude": "",
+  "wordgap": "0",
+  "pitch": "120",
+  "speed": "60",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 24.419,
+  "end": 27.248,
+  "target": "top-title",
+  "text": "exterminate these machines. Exterminate?",
+  "showText": false,
+  "amplitude": "",
+  "wordgap": "0",
+  "pitch": "145",
+  "speed": "77",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 30.5,
+  "end": 36.873,
+  "target": "top-title",
+  "text": "But this man has a wood gasifier. He alone can stop the Dahleks.",
+  "showText": false,
+  "amplitude": "",
+  "wordgap": "0",
+  "pitch": "20",
+  "speed": "120",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 52.351,
+  "end": 53.846,
+  "target": "top-title",
+  "text": "EXPLAIN TO THE OTHERS OF THE DAHLEK CONQUEST. ",
+  "showText": false,
+  "amplitude": "",
+  "wordgap": "0",
+  "pitch": "80",
+  "speed": "80",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://media.bodylife.de.s3.amazonaws.com/fibo/FIBO_2012_Promi_Reportage_480_270_qtp.mp4?butteruid=1350990420213" , "http://www.youtube.com/watch?v=P8HojIjNL98&amp;feature=plcp&amp;butteruid=1350990420214" ], {});
+popcorn.pop({
+  "start": 0.805,
+  "end": 6.032,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/error.png",
+  "text": "www.beauty-fairs.de",
+  "left": "70",
+  "top": "40",
+  "link": "http://www.beauty-fairs.de"
+});
+popcorn.pop({
+  "start": 23.251,
+  "end": 69.919,
+  "target": "pop-container",
+  "text": "pop!",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": ""
+});
+popcorn.pop({
+  "start": 6.311,
+  "end": 19.099,
+  "target": "pop-container",
+  "exit": 0.3,
+  "text": "Europas größte Kosmetimesse im Herbst",
+  "icon": "images/thumbsup.png",
+  "left": 13,
+  "top": 31,
+  "align": "right"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

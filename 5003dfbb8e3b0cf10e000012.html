@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=MOqOyU2A9Sc&amp;feature=plcp&amp;butteruid=1342430139014" , "http://www.youtube.com/watch?v=B7nRs-juqTw&amp;feature=fvsr&amp;butteruid=1342430139015" ], {});
+popcorn.pop({
+  "start": 0.679,
+  "end": 7.299,
+  "target": "pop-container",
+  "exit": 0.3,
+  "left": "30",
+  "top": "30",
+  "icon": "images/thumbsup.png",
+  "text": "Vol ras",
+  "link": "http://www.youtube.com/watch?v=B7nRs-juqTw&amp;feature=fvsr"
+});
+popcorn.pop({
+  "start": 4.328,
+  "end": 9.832,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/user.png",
+  "text": "Blog",
+  "left": 41,
+  "top": 67,
+  "link": "http://multimedia.uoc.edu/transmedia/?p=46",
+  "align": "left"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

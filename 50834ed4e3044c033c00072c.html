@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=8O7uIFPHtaE&amp;feature=my_favorites&amp;list=FLIcxZjTyeSwXYT9PE-ijHlQ&amp;butteruid=1350782685346" ], {});
+popcorn.pop({
+  "start": 31.074,
+  "end": 33.517,
+  "target": "pop-container",
+  "text": "Hotel is down this alley!",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 41,
+  "left": 75,
+  "icon": ""
+});
+popcorn.pop({
+  "start": 35.256,
+  "end": 40.953,
+  "target": "pop-container",
+  "text": "Same piazza.  Walk up to the left on way to school",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 45,
+  "left": 12,
+  "icon": "images/women.png"
+});
+popcorn.pop({
+  "start": 80.424,
+  "end": 85.561,
+  "target": "pop-container",
+  "text": "View from the port looking back at the city",
+  "link": "http://www.cob.ohio.edu",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": 36,
+  "icon": ""
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

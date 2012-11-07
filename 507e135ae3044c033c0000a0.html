@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.mp4?butteruid=1350457856988" , "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.ogv?butteruid=1350457856989" , "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.webm?butteruid=1350457856990" ], {});
+popcorn.text({
+  "start": 15,
+  "end": 25,
+  "target": "above-right",
+  "text": "&lt;h1&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/1906_San_Francisco_earthquake&#34;&gt;Click here to learn about the great earthquake of 1906&lt;/a&gt;.&lt;/h1&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 0.054,
+  "end": 2.538,
+  "target": "above-right",
+  "text": "一枚目テキスト",
+  "escape": false,
+  "multiline": false
+});
+popcorn.image({
+  "start": 12.424,
+  "end": 22.437,
+  "target": "above-right",
+  "href": "http://en.wikipedia.org/wiki/File:Post-and-Grant-Avenue.-Look.jpg",
+  "src": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Post-and-Grant-Avenue.-Look.jpg/800px-Post-and-Grant-Avenue.-Look.jpg",
+  "text": ""
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?feature=player_embedded&amp;v=_kiNq9TFj9I&amp;butteruid=1350662479481" , "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.ogv?butteruid=1350662479482" , "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.webm?butteruid=1350662479483" ], {});
+popcorn.googlemap({
+  "start": 5,
+  "end": 14.5,
+  "target": "above-right",
+  "type": "TERRAIN",
+  "zoom": 4,
+  "lat": "",
+  "lng": "",
+  "location": "Africa",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.image({
+  "start": 0.12,
+  "end": 65,
+  "target": "above-right",
+  "href": "http://en.wikipedia.org/wiki/Okapi",
+  "src": "http://upload.wikimedia.org/wikipedia/commons/b/b6/Okapia_johnstoni_-Marwell_Wildlife%2C_Hampshire%2C_England-8a.jpg",
+  "text": "Okapi"
+});
+popcorn.text({
+  "start": 0,
+  "end": 64.46,
+  "target": "above-right",
+  "text": "&lt;h1&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Okapi&#34;&gt;Click here to learn about the Okapi.&lt;/a&gt;&lt;/h1&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

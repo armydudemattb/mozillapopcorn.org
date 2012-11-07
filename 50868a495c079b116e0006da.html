@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?feature=player_embedded&amp;v=YzyQ5sUXWQI&amp;butteruid=1351068316419#!" ], {});
+popcorn.pop({
+  "start": 1.976,
+  "end": 4.425,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/info.png",
+  "text": "The Brightwave Website",
+  "left": 62,
+  "top": 17,
+  "link": "http://www.brightwave.co.uk/"
+});
+popcorn.pop({
+  "start": 19.125,
+  "end": 22.133,
+  "target": "pop-container",
+  "text": "Learning Technologies Website",
+  "link": "http://www.learningtechnologies.co.uk/",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 38,
+  "left": 8,
+  "icon": "images/info.png"
+});
+popcorn.pop({
+  "start": 29.144,
+  "end": 32.133,
+  "target": "pop-container",
+  "text": "Learning Management",
+  "link": "http://www.brightwave.co.uk/learning-and-performance/learning-and-performance-portals",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 21,
+  "left": 7,
+  "icon": "images/info.png"
+});
+popcorn.pop({
+  "start": 37.101,
+  "end": 40.1,
+  "target": "pop-container",
+  "text": "E-learning as a Business strategy  ",
+  "link": "http://www.brightwave.co.uk/articles-and-latest-thinking/learning-technologies-as-a-business-strategy ",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 73,
+  "left": 7,
+  "icon": "images/info.png"
+});
+popcorn.pop({
+  "start": 55.992,
+  "end": 59,
+  "target": "pop-container",
+  "text": "Learning via Computers\nBlog",
+  "link": "http://clive-shepherd.blogspot.co.uk/2008/12/gen-y-is-least-of-our-worries.html",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 29,
+  "left": 24,
+  "icon": "images/info.png"
+});
+popcorn.pop({
+  "start": 74.953,
+  "end": 79.967,
+  "target": "pop-container",
+  "text": "Brightwave initiatives\nWhat a difference",
+  "link": "http://www.brightwave.co.uk/initiatives/what-a-difference",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 15,
+  "left": 67,
+  "icon": "images/info.png"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

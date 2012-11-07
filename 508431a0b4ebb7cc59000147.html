@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=B8iuc2A9Vco&amp;butteruid=1350849854012" ], {});
+popcorn.googlemap({
+  "start": "0",
+  "end": 1.75,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 11,
+  "lat": "",
+  "lng": "",
+  "location": "Tampa Florida",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 1.75,
+  "end": 3,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 14,
+  "lat": "",
+  "lng": "",
+  "location": "Avalon heights Tampa Florida",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 3,
+  "end": 5,
+  "target": "above-right",
+  "type": "SATELLITE",
+  "zoom": 18,
+  "lat": "28.06958775811791",
+  "lng": "-82.41248637553254",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 35.75,
+  "end": 44.5,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 10,
+  "lat": "",
+  "lng": "",
+  "location": "Myakka River State Park Sarasota Florida",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 5,
+  "end": 14.5,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 14,
+  "lat": "",
+  "lng": "",
+  "location": "USF tampa",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 45.5,
+  "end": 55,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 12,
+  "lat": "",
+  "lng": "",
+  "location": "Myakka River State Park Sarasota Florida ",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.text({
+  "start": 25.75,
+  "end": 35.5,
+  "target": "above-right",
+  "text": "&lt;h1&gt;&lt;a href=&#34;http://floridastateparks.reserveamerica.com/camping/Myakka_River_Sp/r/campgroundDetails.do?contractCode=FL&amp;parkId=281056&amp;topTabIndex=CampingSpot&#34;&gt;Click here to Discover the camp grounds.&lt;/a&gt;&lt;/h1&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 15,
+  "end": 25,
+  "target": "above-right",
+  "text": "&lt;h1&gt;&lt;a href=&#34;http://floridastateparks.reserveamerica.com/camping/Myakka_River_Sp/r/campgroundDetails.do?contractCode=FL&amp;parkId=281056&amp;topTabIndex=CampingSpot&#34;&gt;Click here to Discover the camp grounds.&lt;/a&gt;&lt;/h1&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.image({
+  "start": 15,
+  "end": 25,
+  "target": "above-right",
+  "href": "http://www.floridastateparks.org/myakkariver/default.cfm",
+  "src": "http://uptake-mu-blogs.s3.amazonaws.com/blog/lodging.uptake.com/files/2010/03/fl-myakkarvr-canopywlkway.jpg",
+  "text": ""
+});
+popcorn.image({
+  "start": 25.75,
+  "end": 35.5,
+  "target": "above-right",
+  "href": "http://floridastateparks.reserveamerica.com/camping/Myakka_River_Sp/r/campgroundDetails.do?contractCode=FL&amp;parkId=281056&amp;topTabIndex=CampingSpot",
+  "src": "http://www.sptimes.com/2007/08/24/images/tb_myakka450.jpg",
+  "text": ""
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

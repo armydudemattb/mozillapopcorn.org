@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/newscaster/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>News Caster</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic|Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/plugins/titlecard/popcorn.titlecard.css">
+  <link rel="stylesheet" href="../shared/plugins/shrink/popcorn.shrink.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+  <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titlecard/popcorn.titlecard.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h2 class="logo">knn report</h2>
+    <article class="cube-container">
+      <section class="cube">
+        <div>
+          <div class="cube-side">
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-top"></div>
+        <div class="cube-bottom"></div>
+        <div class="cube-shadow"></div>
+      </section>
+    </article>
+  </header>
+  <div role="main">
+    <section id="video-container" class="video-container">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"
+        style="width:800px; height:450px;"></div>
+      <div id="video-overlay" class="video-overlay" data-butter="target">
+        <div id="upper-corner" class="upper-corner" data-butter="target"></div>
+      </div>
+    </section>
+    <section class="cf suplementary">
+      <article class="block" id="Area1" data-butter="target">
+      </article>
+      <article class="block">
+      </article>
+      <article class="block" id="Area2" data-butter="target">
+      </article>
+    </section>
+  </div>
+</div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.kaltura.com/p/557781/sp/55778100/download/entry_id/1_77kr98f9/flavor/1_1mmisqun/relocate/Popcorn.js%20Test%20(iPad%20Mezzanine%20Source).mp4?butteruid=1351888741798" ], {});
+popcorn.titlecard({
+  "start": 2.144,
+  "end": 6.39,
+  "target": "video-overlay",
+  "title": "The Drive",
+  "subheading": "Your Guide To Getting Around"
+});
+popcorn.zoink({
+  "start": "0",
+  "end": 2.158,
+  "target": "video-overlay",
+  "text": "Is this thing on?",
+  "type": "thought",
+  "triangle": "top left",
+  "flip": true,
+  "classes": "none",
+  "order": "1",
+  "top": 178,
+  "left": 500,
+  "width": "200"
+});
+popcorn.googlemap({
+  "start": 9.315,
+  "end": 12.803,
+  "target": "video-overlay",
+  "type": "ROADMAP",
+  "zoom": 15,
+  "lat": "",
+  "lng": "",
+  "location": "target center minneapolis mn",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.photo({
+  "start": 40.503,
+  "end": 44.602,
+  "target": "video-overlay",
+  "src": "http://2.bp.blogspot.com/-P6y71jdtEpY/TatSLH1ZkyI/AAAAAAAAB9k/4v4TWcg2p8I/s1600/Safe+drive.jpg",
+  "href": "http://www.mnsafedriving.com/",
+  "width": 328,
+  "height": 322,
+  "top": -2,
+  "left": -371
+});
+popcorn.photo({
+  "start": 51.549,
+  "end": 65.027,
+  "target": "video-overlay",
+  "src": "http://www.excelltechmobile.com/uploads/product/fullpic/7d9267cc5e413ebef6f2f138d0c56bbc.png",
+  "href": "https://www.niceridemn.org/",
+  "width": 396,
+  "height": 348,
+  "top": 45,
+  "left": -309
+});
+popcorn.photo({
+  "start": 6.503,
+  "end": 9.677,
+  "target": "video-overlay",
+  "src": "http://www.alarmforce.com/blog/wp-content/uploads/2010/10/twolves2.jpg",
+  "href": "http://www.nba.com/timberwolves/countdown-tipoff-minnesota-timberwolves-vs-sacramento-kings",
+  "width": 256,
+  "height": 192,
+  "top": 10,
+  "left": 525
+});
+popcorn.photo({
+  "start": 24.246,
+  "end": 31.124,
+  "target": "video-overlay",
+  "src": "http://jitterscoffeeduluth.com/sites/default/files/postcard.png",
+  "href": "http://jitterscoffeeduluth.com",
+  "width": 457,
+  "height": 297,
+  "top": 28,
+  "left": 585
+});
+popcorn.photo({
+  "start": 29.456,
+  "end": 35.778,
+  "target": "video-overlay",
+  "src": "http://fortunebay.com/wp-content/uploads/2012/06/DeerHuntingOpener.jpg",
+  "href": "http://www.dnr.state.mn.us/hunting/deer/index.html",
+  "width": 506,
+  "height": 202,
+  "top": 113,
+  "left": -319
+});
+popcorn.photo({
+  "start": 43.629,
+  "end": 48.006,
+  "target": "video-overlay",
+  "src": "http://1.bp.blogspot.com/-14I1iluRYKM/TvoI5vt_5kI/AAAAAAAAAL8/D-sVBgQ1dzk/s1600/Screen+shot+2011-12-27+at+12.04.12+PM.png",
+  "href": "http://www.ridesafemn.com/pages/home.html",
+  "width": 311,
+  "height": 304,
+  "top": 25,
+  "left": 862
+});
+popcorn.zoink({
+  "start": 6.975,
+  "end": 9.755,
+  "target": "video-overlay",
+  "text": "Countdown till gametime!",
+  "type": "none",
+  "classes": "icon-check",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": "208",
+  "left": "549",
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 14.939,
+  "end": 16.84,
+  "target": "video-overlay",
+  "text": "I&#39;m going to the zoo!",
+  "type": "thought",
+  "classes": "icon-x",
+  "triangle": "bottom right",
+  "flip": false,
+  "order": "1",
+  "top": "53",
+  "left": "40",
+  "width": "200"
+});
+popcorn.flickr({
+  "start": 37.098,
+  "end": 45.088,
+  "target": "video-overlay",
+  "userid": "",
+  "tags": "state patrol",
+  "username": "",
+  "apikey": "",
+  "height": "200",
+  "width": "200",
+  "padding": "0",
+  "border": "0",
+  "numberofimages": "10"
+});
+popcorn.flickr({
+  "start": 57.662,
+  "end": 65.027,
+  "target": "video-overlay",
+  "userid": "",
+  "tags": "nice ride",
+  "username": "",
+  "apikey": "",
+  "height": "200",
+  "width": "200",
+  "padding": "0",
+  "border": "0",
+  "numberofimages": "10"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://soundcloud.com/roman-mars/99-invisible-60-names-vs?butteruid=1351091724328" ], {});
+popcorn.googlemap({
+  "start": "0",
+  "end": 1.75,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 11,
+  "lat": "",
+  "lng": "",
+  "location": "San Francisco",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 1.75,
+  "end": 3,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 12,
+  "lat": "",
+  "lng": "",
+  "location": "Los Angeles",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 3,
+  "end": 5,
+  "target": "above-right",
+  "type": "STAMEN-WATERCOLOR",
+  "zoom": 3,
+  "lat": "",
+  "lng": "",
+  "location": "alaska",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 35.75,
+  "end": 44.5,
+  "target": "above-right",
+  "type": "ROADMAP",
+  "zoom": 3,
+  "lat": "",
+  "lng": "",
+  "location": "alaska",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 45.5,
+  "end": 55,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 8,
+  "lat": "",
+  "lng": "",
+  "location": "haiti",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.text({
+  "start": 25.75,
+  "end": 35.5,
+  "target": "above-right",
+  "text": "&lt;h1&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Earthquake_engineering&#34;&gt;Click here to learn about earthquake engineering.&lt;/a&gt;&lt;/h1&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.image({
+  "start": 5,
+  "end": 15,
+  "target": "above-right",
+  "href": "http://mozillapopcorn.org/wp-content/themes/popcorn/images/for_developers.png",
+  "src": "http://media.npr.org/assets/img/2012/10/23/screens_wide-c5384bfcd53c0e3b2c32328f049ccad8a550ebb9-s4.jpg",
+  "text": ""
+});
+popcorn.image({
+  "start": 15.188,
+  "end": 40.067,
+  "target": "above-right",
+  "href": "http://mozillapopcorn.org/wp-content/themes/popcorn/images/for_developers.png",
+  "src": "http://media.npr.org/assets/img/2012/10/24/spookyfoods8_wide-682d7bd8cafe6543428e06bfc57cb65a92adf743-s4.jpg",
+  "text": ""
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

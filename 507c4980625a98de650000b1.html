@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://youtu.be/1-32EcSY-AI?butteruid=1350325977406" ], {});
+popcorn.pop({
+  "start": 2.813,
+  "end": 6.631,
+  "target": "pop-container",
+  "text": "Upside down woman $1200\n",
+  "link": "http://www.robotfondue.com",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 39,
+  "left": 52,
+  "icon": "images/money.png"
+});
+popcorn.pop({
+  "start": 15.002,
+  "end": 18.425,
+  "target": "pop-container",
+  "text": "buy the album\n",
+  "link": "https://itunes.apple.com/us/artist/the-happen-ins/id359331455",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/music.png"
+});
+popcorn.pop({
+  "start": 6.884,
+  "end": 9.061,
+  "target": "pop-container",
+  "text": "worth and worth porkpie $215",
+  "link": "http://www.hatshop.com/site/showItem.php?Inv_ID=153",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 12,
+  "left": 86,
+  "icon": "images/money.png"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/robots/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Robots</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Jolly+Lodger|Bangers|Lato|Fredericka+the+Great|Lovers+Quarrel' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+    <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/speak/popcorn.speak.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titles/popcorn.titles.robots.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+  <div class="inner-container">
+    <div class="wrapper">
+      <header>
+        <h2 id="logo" class="logo on">Robots in everytown</h2>
+      </header>
+      <div role="main">
+        <section id="video-container" class="video-container">
+          <div id="video" data-butter="media"
+            data-butter-media-controls="true"
+            style="width:800px; height:500px;"></div>
+          <div class="video-overlay">
+            <div class="text-overlay">
+              <div id="top-title" data-butter="target"></div>
+              <div id="mid-title" data-butter="target"></div>
+              <div id="bottom-title" data-butter="target"></div>
+            </div>
+          </div>
+          <div id="video-overlay" class="video-overlay" data-butter="target"></div>
+        </section>
+        <section class="cf suplementary">
+          <article id="Supplementary1" class="block" data-butter="target">
+          </article>
+          <article class="block">
+          </article>
+          <article id="Supplementary2" class="block" data-butter="target">
+          </article>
+        </section>
+      </div>
+      <footer>
+       <p>All video and images courtesy Public Domain material at <a href="http://www.archive.org">The Internet Archive</a>
+        <br>Music courtesy the <a href="http://www.freemusicarchive.org"> Free Music Archive</a>
+        <br>Wake <em>"Steppin"</em>
+        <br><img src="http://i.creativecommons.org/l/by/3.0/88x31.png"></p>
+      </footer>
+    </div><!--.wrapper-->
+  </div><!--.inner-container-->
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://videos-cdn.mozilla.net/serv/webmademovies/robots.mp4?butteruid=1340319474293" , "http://videos-cdn.mozilla.net/serv/webmademovies/robots.webm?butteruid=1340319474294" ], {});
+popcorn.titles({
+  "start": "0",
+  "end": 2.373,
+  "target": "bottom-title",
+  "text": "The Green Machine",
+  "styles": "Top Title",
+  "transitionSpeed": "slow"
+});
+popcorn.titles({
+  "start": 57.059,
+  "end": 62.146,
+  "target": "top-title",
+  "text": "Share on Twitter! Use hashtag #allhailrobots",
+  "styles": "Top Title",
+  "transitionSpeed": "normal"
+});
+popcorn.speak({
+  "start": 15.516,
+  "end": 18.167,
+  "target": "top-title",
+  "text": "Foolish Humans !@#",
+  "showText": true,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "50",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.titles({
+  "start": 26.41,
+  "end": 29.472,
+  "target": "top-title",
+  "text": "A few days later",
+  "styles": "Top Title",
+  "transitionSpeed": "normal"
+});
+popcorn.zoink({
+  "start": 36.617,
+  "end": 39.254,
+  "target": "top-title",
+  "text": "We must destroy yhe green machine",
+  "type": "thought",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": "200",
+  "left": "200",
+  "width": "200"
+});
+popcorn.speak({
+  "start": 31.599,
+  "end": 35.936,
+  "target": "top-title",
+  "text": "It is a large Green Machine",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "2",
+  "pitch": "300",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 5.161,
+  "end": 7.454,
+  "target": "top-title",
+  "text": "The Human Race",
+  "showText": false,
+  "amplitude": "",
+  "wordgap": "0",
+  "pitch": "100",
+  "speed": "100",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.googlemap({
+  "start": 18.84,
+  "end": 20.924,
+  "target": "video-overlay",
+  "type": "SATELLITE",
+  "zoom": 4,
+  "lat": "33.96700544981362",
+  "lng": "103.55615567578126",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.speak({
+  "start": 13.291,
+  "end": 15.589,
+  "target": "top-title",
+  "text": "Their bodies are Frail and weak",
+  "showText": true,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "5",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.googlemap({
+  "start": 21.094,
+  "end": 23.136,
+  "target": "top-title",
+  "type": "TERRAIN",
+  "zoom": 6,
+  "lat": "34.4424629082233",
+  "lng": "104.81063137499994",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 23.306,
+  "end": 26.368,
+  "target": "top-title",
+  "type": "HYBRID",
+  "zoom": 9,
+  "lat": "34.23608556557315",
+  "lng": "108.4883047148437",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.photo({
+  "start": 29.387,
+  "end": 35.682,
+  "target": "mid-title",
+  "src": "http://davidbeem.files.wordpress.com/2011/05/hulk-movie.jpg",
+  "href": "",
+  "width": "800",
+  "height": "500",
+  "top": "1",
+  "left": "2"
+});
+popcorn.zoink({
+  "start": 52.65,
+  "end": 55.33,
+  "target": "top-title",
+  "text": "We need to replan our strategies",
+  "type": "thought",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": "200",
+  "left": "200",
+  "width": "200"
+});
+popcorn.speak({
+  "start": 7.32,
+  "end": 9.953,
+  "target": "top-title",
+  "text": "We will surely crush them!",
+  "showText": false,
+  "amplitude": "",
+  "wordgap": "0",
+  "pitch": "100",
+  "speed": "120",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 11.108,
+  "end": 13.266,
+  "target": "top-title",
+  "text": "Their Technology is inferior",
+  "showText": true,
+  "amplitude": "",
+  "wordgap": "5",
+  "pitch": "100",
+  "speed": "150",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 29.387,
+  "end": 31.684,
+  "target": "top-title",
+  "text": "The Humans have a powerful weapon",
+  "showText": false,
+  "amplitude": "",
+  "wordgap": "0",
+  "pitch": "70",
+  "speed": "70",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 48.398,
+  "end": 52.395,
+  "target": "top-title",
+  "text": "Retreat God$@^",
+  "showText": false,
+  "amplitude": "",
+  "wordgap": "0",
+  "pitch": "80",
+  "speed": "80",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 35.937,
+  "end": 40.53,
+  "target": "top-title",
+  "text": "We must destroy the green machine",
+  "showText": false,
+  "amplitude": "",
+  "wordgap": "0",
+  "pitch": "0",
+  "speed": "0",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 18.862,
+  "end": 22.779,
+  "target": "top-title",
+  "text": "We shall Begin Our invasion here where they are weakest",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "5",
+  "pitch": "175",
+  "speed": "125",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 24.156,
+  "end": 26.836,
+  "target": "top-title",
+  "text": "Now we shall Begin the invasion",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "0",
+  "pitch": "180",
+  "speed": "175",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.speak({
+  "start": 42.784,
+  "end": 48.1,
+  "target": "top-title",
+  "text": "He is too strong",
+  "showText": false,
+  "amplitude": "100",
+  "wordgap": "5",
+  "pitch": "10",
+  "speed": "50",
+  "pluginPath": "../shared/plugins/speak/"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

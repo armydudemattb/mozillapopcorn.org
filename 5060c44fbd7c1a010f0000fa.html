@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=E4y-kRWMzp4&amp;feature=share&amp;list=UUq0onrLdPynT6VEwxpp2RcA&amp;butteruid=1349827029878" ], {});
+popcorn.googlemap({
+  "start": 18.211,
+  "end": 34.212,
+  "target": "above-right",
+  "type": "TERRAIN",
+  "zoom": 10,
+  "lat": "",
+  "lng": "",
+  "location": "Puebla, Mexico",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.text({
+  "start": 0,
+  "end": 18.328,
+  "target": "above-right",
+  "text": "IndaMagazine Puebla 2012",
+  "escape": true,
+  "multiline": true
+});
+popcorn.text({
+  "start": 34.26,
+  "end": 53.343,
+  "target": "above-right",
+  "text": "MORE ABOUT THE CITY OF PUEBLA*",
+  "escape": false,
+  "multiline": false
+});
+popcorn.image({
+  "start": 34.186,
+  "end": 43.838,
+  "target": "above-right",
+  "href": "http://tiny.cc/7qp5kw",
+  "src": "http://tiny.cc/7qp5kw",
+  "text": ""
+});
+popcorn.image({
+  "start": 0,
+  "end": 18.502,
+  "target": "above-right",
+  "href": "http://tiny.cc/m1p5kw",
+  "src": "http://tiny.cc/m1p5kw",
+  "text": ""
+});
+popcorn.image({
+  "start": 43.986,
+  "end": 47.522,
+  "target": "above-right",
+  "href": "http://tiny.cc/nkq5kw",
+  "src": "http://tiny.cc/nkq5kw",
+  "text": ""
+});
+popcorn.image({
+  "start": 47.596,
+  "end": 50.764,
+  "target": "above-right",
+  "href": "http://tiny.cc/6eq5kw",
+  "src": "http://tiny.cc/6eq5kw",
+  "text": ""
+});
+popcorn.image({
+  "start": 50.469,
+  "end": 53.269,
+  "target": "above-right",
+  "href": "http://tiny.cc/wiq5kw",
+  "src": "http://tiny.cc/wiq5kw",
+  "text": ""
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

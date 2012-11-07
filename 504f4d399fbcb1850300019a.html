@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.mp4?butteruid=1347374381377" , "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.ogv?butteruid=1347374381378" , "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.webm?butteruid=1347374381379" ], {});
+popcorn.pop({
+  "start": 1.98,
+  "end": 4.13,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/error.png",
+  "text": "Add kernels!",
+  "left": "70",
+  "top": "40"
+});
+popcorn.pop({
+  "start": 7.21,
+  "end": 8.21,
+  "target": "pop-container",
+  "exit": 0.3,
+  "text": "Let &#39;em pop!",
+  "icon": "images/heart.png",
+  "left": "30",
+  "top": "70"
+});
+popcorn.pop({
+  "start": 10.29,
+  "end": 11.29,
+  "target": "pop-container",
+  "exit": 0.3,
+  "left": "30",
+  "top": "30",
+  "icon": "images/thumbsup.png",
+  "text": "Everything is better with Butter!"
+});
+popcorn.pop({
+  "start": 12.25,
+  "end": 13.25,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/money.png",
+  "text": "Profit!",
+  "left": "20",
+  "top": "80"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

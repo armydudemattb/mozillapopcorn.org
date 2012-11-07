@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://anavallasuiza.com/share/videos/explora/manolo-explora.mp4?butteruid=1341949394545" , "http://anavallasuiza.com/share/videos/explora/manolo-explora.ogv?butteruid=1341949394546" ], {});
+popcorn.googlemap({
+  "start": 49.054,
+  "end": 88.364,
+  "target": "above-right",
+  "type": "ROADMAP",
+  "zoom": 3,
+  "lat": "",
+  "lng": "",
+  "location": "pionedo",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 4.459,
+  "end": 48.559,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 11,
+  "lat": "",
+  "lng": "",
+  "location": "Piornedo",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 92.493,
+  "end": 126.187,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 8,
+  "lat": "",
+  "lng": "",
+  "location": "donís",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 126.682,
+  "end": 193.079,
+  "target": "above-right",
+  "type": "ROADMAP",
+  "zoom": 1,
+  "lat": "",
+  "lng": "",
+  "location": "lugo",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 205.797,
+  "end": 220.332,
+  "target": "above-right",
+  "type": "ROADMAP",
+  "zoom": 3,
+  "lat": "",
+  "lng": "",
+  "location": "ancares",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.image({
+  "start": 24.114,
+  "end": 31,
+  "target": "above-right",
+  "href": "http://explora.vilamor.eu/gl/puntos/",
+  "src": "http://explora.vilamor.eu/explora/uploads/imaxes/imaxe/4fe9da32c5652-2pequenavilamor.amalladadoortigal.jpg",
+  "text": ""
+});
+popcorn.image({
+  "start": 29.565,
+  "end": 39.64,
+  "target": "above-right",
+  "href": "http://explora.vilamor.eu/gl/puntos/",
+  "src": "http://explora.vilamor.eu/explora/uploads/imaxes/imaxe/4fe9da6f865e8-3pequenavilamor.amalladadoortigal.jpg",
+  "text": ""
+});
+popcorn.image({
+  "start": 37.988,
+  "end": 50.541,
+  "target": "above-right",
+  "href": "http://explora.vilamor.eu/gl/puntos/",
+  "src": "http://explora.vilamor.eu/explora/uploads/imaxes/imaxe/4fe9da839f2d3-4pequenavilamor.amalladadoortigal.jpg",
+  "text": ""
+});
+popcorn.text({
+  "start": 18.168,
+  "end": 26.922,
+  "target": "above-right",
+  "text": "Moitas das escenas de Vilamor rodáronse nos Ancares. Podes velas nas rutas de &lt;a href=&#34;http://explora.vilamor.eu/gl/puntos/&#34;&gt;Explora Vilamor&lt;/a&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 42.283,
+  "end": 55.331,
+  "target": "above-right",
+  "text": "A mallada do Ortigal",
+  "escape": false,
+  "multiline": false
+});
+popcorn.twitter({
+  "start": 78.289,
+  "end": 124.04,
+  "target": "above-right",
+  "src": "ancares",
+  "height": "200",
+  "width": "250"
+});
+popcorn.image({
+  "start": 109.67,
+  "end": 137.253,
+  "target": "above-right",
+  "href": "http://explora.vilamor.eu/gl/puntos/",
+  "src": "http://explora.vilamor.eu/explora/uploads/imaxes/imaxe/4fe9e9b999ab0-1pequenavilamor.suarboosancares.jpg",
+  "text": ""
+});
+popcorn.image({
+  "start": 137.253,
+  "end": 161.863,
+  "target": "above-right",
+  "href": "http://explora.vilamor.eu/gl/puntos/",
+  "src": "http://explora.vilamor.eu/explora/uploads/imaxes/imaxe/4fe9f915691e0-3pequenavilamor.cortindemuriasosancares.jpg",
+  "text": ""
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

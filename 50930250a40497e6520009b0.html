@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/newscaster/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>News Caster</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic|Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/plugins/titlecard/popcorn.titlecard.css">
+  <link rel="stylesheet" href="../shared/plugins/shrink/popcorn.shrink.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+  <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titlecard/popcorn.titlecard.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h2 class="logo">knn report</h2>
+    <article class="cube-container">
+      <section class="cube">
+        <div>
+          <div class="cube-side">
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-top"></div>
+        <div class="cube-bottom"></div>
+        <div class="cube-shadow"></div>
+      </section>
+    </article>
+  </header>
+  <div role="main">
+    <section id="video-container" class="video-container">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"
+        style="width:800px; height:450px;"></div>
+      <div id="video-overlay" class="video-overlay" data-butter="target">
+        <div id="upper-corner" class="upper-corner" data-butter="target"></div>
+      </div>
+    </section>
+    <section class="cf suplementary">
+      <article class="block" id="Area1" data-butter="target">
+      </article>
+      <article class="block">
+      </article>
+      <article class="block" id="Area2" data-butter="target">
+      </article>
+    </section>
+  </div>
+</div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=LHopPTMpWmc&amp;butteruid=1351808096255" , "http://videos-cdn.mozilla.net/serv/webmademovies/Moz_Doc_0329_GetInvolved.webm?butteruid=1351808096256" ], {});
+popcorn.titlecard({
+  "start": 0.111,
+  "end": 8.879,
+  "target": "video-overlay",
+  "title": "Top Breaking  News From PE.com",
+  "subheading": "Mitch Lucker lead singer of sucide silence  dies from motorcycle crash."
+});
+popcorn.titlecard({
+  "start": 15.09,
+  "end": 26.186,
+  "target": "video-overlay",
+  "title": "Candlelight vigil tonight in Riverside ",
+  "subheading": "Show your support at Back to the Grind in Riverside"
+});
+popcorn.zoink({
+  "start": 88.776,
+  "end": 97.04,
+  "target": "video-overlay",
+  "text": "We&#39;re deeply saddened to have lost one of heavy music&#39;s most valued icons, Mitch Lucker. Our thoughts are with his family friends and fans.  &#34;Bring me the horizon&#34; twitter.",
+  "type": "none",
+  "classes": "none",
+  "triangle": "top left",
+  "flip": false,
+  "order": "1",
+  "top": "200",
+  "left": "200",
+  "width": "200"
+});
+popcorn.titlecard({
+  "start": 8.683,
+  "end": 15.039,
+  "target": "video-overlay",
+  "title": "Interview with Mitch Lucker 3 Months ago",
+  "subheading": "Interviewed at Tuska Open Air 2012 by www.kaaoszine.fi"
+});
+popcorn.zoink({
+  "start": 24.976,
+  "end": 75.353,
+  "target": "video-overlay",
+  "text": "Visit Pe.com for the latest news on Mitch Lucker",
+  "type": "none",
+  "classes": "none",
+  "triangle": "top left",
+  "flip": false,
+  "order": "1",
+  "top": "200",
+  "left": "200",
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 81.983,
+  "end": 88.953,
+  "target": "video-overlay",
+  "text": "My prayers &amp; condolences to the Lucker family. To Jolie &amp; their child. Ugh. Such a great dude &amp; one of the best screamers ever. RIP Mitch. Craig Owens Twitter",
+  "type": "none",
+  "classes": "none",
+  "triangle": "bottom right",
+  "flip": false,
+  "order": "1",
+  "top": "200",
+  "left": "200",
+  "width": "200"
+});
+popcorn.titlecard({
+  "start": 97.027,
+  "end": 150.464,
+  "target": "video-overlay",
+  "title": "Get the Latest News on PE.com",
+  "subheading": "Read more about Mitch Lucker&#39;s death"
+});
+popcorn.googlemap({
+  "start": 15.058,
+  "end": 26.192,
+  "target": "Area1",
+  "type": "ROADMAP",
+  "zoom": 10,
+  "lat": "",
+  "lng": "",
+  "location": "3575 University Ave, Riverside, CA.",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.zoink({
+  "start": 75.046,
+  "end": 82.186,
+  "target": "video-overlay",
+  "text": "MITCH WAS A SUPER NICE GUY. HE WILL BE MISSED, RIP. pe.com/iguide/music/music-h...",
+  "type": "none",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": "200",
+  "left": "200",
+  "width": "200"
+});
+popcorn.flickr({
+  "start": 150.432,
+  "end": 166.365,
+  "target": "upper-corner",
+  "userid": "",
+  "tags": "mitch lucker, suicide silence",
+  "username": "",
+  "apikey": "",
+  "height": "200",
+  "width": "200",
+  "padding": "0",
+  "border": "0",
+  "numberofimages": "10"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

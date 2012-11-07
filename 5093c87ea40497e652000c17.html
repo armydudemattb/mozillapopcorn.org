@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/newscaster/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>News Caster</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic|Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/plugins/titlecard/popcorn.titlecard.css">
+  <link rel="stylesheet" href="../shared/plugins/shrink/popcorn.shrink.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+  <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titlecard/popcorn.titlecard.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h2 class="logo">knn report</h2>
+    <article class="cube-container">
+      <section class="cube">
+        <div>
+          <div class="cube-side">
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-top"></div>
+        <div class="cube-bottom"></div>
+        <div class="cube-shadow"></div>
+      </section>
+    </article>
+  </header>
+  <div role="main">
+    <section id="video-container" class="video-container">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"
+        style="width:800px; height:450px;"></div>
+      <div id="video-overlay" class="video-overlay" data-butter="target">
+        <div id="upper-corner" class="upper-corner" data-butter="target"></div>
+      </div>
+    </section>
+    <section class="cf suplementary">
+      <article class="block" id="Area1" data-butter="target">
+      </article>
+      <article class="block">
+      </article>
+      <article class="block" id="Area2" data-butter="target">
+      </article>
+    </section>
+  </div>
+</div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://videos-cdn.mozilla.net/serv/webmademovies/Moz_Doc_0329_GetInvolved.mp4?butteruid=1351862354214" , "http://videos-cdn.mozilla.net/serv/webmademovies/Moz_Doc_0329_GetInvolved.webm?butteruid=1351862354215" ], {});
+popcorn.text({
+  "start": 0,
+  "end": 1,
+  "text": "Here you can put any text you like!",
+  "target": "Area1",
+  "escape": false,
+  "multiline": false
+});
+popcorn.titlecard({
+  "start": 3.988,
+  "end": 6.866,
+  "target": "video-overlay",
+  "title": "Popcorn rules!",
+  "subheading": "These dudes agree:"
+});
+popcorn.zoink({
+  "start": 7.477,
+  "end": 9.537,
+  "target": "video-overlay",
+  "text": "I am a Robot!",
+  "type": "thought",
+  "triangle": "top left",
+  "flip": false,
+  "classes": "none",
+  "order": 1,
+  "top": 200,
+  "left": 200,
+  "width": 200
+});
+popcorn.photo({
+  "start": 3.987,
+  "end": 6.887,
+  "target": "video-overlay",
+  "src": "data:image/png;base64,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",
+  "href": "http://www.mozilla.org/",
+  "width": "150",
+  "height": "150",
+  "top": 5,
+  "left": 15
+});
+popcorn.text({
+  "start": 1.23,
+  "end": 2.23,
+  "target": "Area2",
+  "text": "Also in here!",
+  "escape": false,
+  "multiline": false
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

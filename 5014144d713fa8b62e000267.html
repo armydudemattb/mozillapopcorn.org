@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=9mEg4eNYFmQ&amp;butteruid=1343497486196" ], {});
+popcorn.text({
+  "start": "0",
+  "end": 10.182,
+  "target": "above-right",
+  "text": "&lt;a href=&#34;http://ediblecitythemovie.com/fair-use/&#34;&gt;Click here for fair-use media list&lt;/a&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 323.427,
+  "end": 338.671,
+  "target": "above-right",
+  "text": "&lt;a href=&#34;http://www.thefutureoffood.com/&#34;&gt;The Future of Food&lt;/a&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.googlemap({
+  "start": 16.969,
+  "end": 18.753,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 11,
+  "lat": "",
+  "lng": "",
+  "location": "San Francisco",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

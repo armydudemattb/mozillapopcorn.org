@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://youtu.be/PQMLQWZ1MfI?butteruid=1351577074714" , "?butteruid=1351577074715" , "?butteruid=1351577074716" ], {});
+popcorn.image({
+  "start": 105.167,
+  "end": 140.742,
+  "target": "video",
+  "href": "https://twitter.com/Nomadic_Knight",
+  "src": "http://distilleryimage2.s3.amazonaws.com/c36c6da21c2411e2b55122000a1f9be7_6.jpg",
+  "text": "TWITTER FEED"
+});
+popcorn.image({
+  "start": 0,
+  "end": 106.088,
+  "target": "video",
+  "href": "https://twitter.com/Nomadic_Knight",
+  "src": "http://distilleryimage4.s3.amazonaws.com/0902aa2e20f411e2adfe22000a1fbd6c_6.jpg",
+  "text": "Click for Twitter Feed"
+});
+popcorn.googlemap({
+  "start": 0,
+  "end": 124.726,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 11,
+  "lat": "",
+  "lng": "",
+  "location": "Bali",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

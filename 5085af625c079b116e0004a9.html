@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/newscaster/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>News Caster</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic|Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/plugins/titlecard/popcorn.titlecard.css">
+  <link rel="stylesheet" href="../shared/plugins/shrink/popcorn.shrink.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+  <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titlecard/popcorn.titlecard.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h2 class="logo">knn report</h2>
+    <article class="cube-container">
+      <section class="cube">
+        <div>
+          <div class="cube-side">
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-top"></div>
+        <div class="cube-bottom"></div>
+        <div class="cube-shadow"></div>
+      </section>
+    </article>
+  </header>
+  <div role="main">
+    <section id="video-container" class="video-container">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"
+        style="width:800px; height:450px;"></div>
+      <div id="video-overlay" class="video-overlay" data-butter="target">
+        <div id="upper-corner" class="upper-corner" data-butter="target"></div>
+      </div>
+    </section>
+    <section class="cf suplementary">
+      <article class="block" id="Area1" data-butter="target">
+      </article>
+      <article class="block">
+      </article>
+      <article class="block" id="Area2" data-butter="target">
+      </article>
+    </section>
+  </div>
+</div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://bruno.cdn01.rambla.be/corn.mp4?butteruid=1351005000214" ], {});
+popcorn.text({
+  "start": 0,
+  "end": 1,
+  "text": "Here you can put any text you like!",
+  "target": "Area1",
+  "escape": false,
+  "multiline": false
+});
+popcorn.titlecard({
+  "start": 3.988,
+  "end": 6.866,
+  "target": "video-overlay",
+  "title": "Popcorn rules!",
+  "subheading": "These dudes agree:"
+});
+popcorn.zoink({
+  "start": 7.477,
+  "end": 9.537,
+  "target": "video-overlay",
+  "text": "I am a Robot!",
+  "type": "thought",
+  "triangle": "top left",
+  "flip": false,
+  "classes": "none",
+  "order": 1,
+  "top": 200,
+  "left": 200,
+  "width": 200
+});
+popcorn.zoink({
+  "start": 17.103,
+  "end": 18.806,
+  "target": "video-overlay",
+  "text": "zoink!",
+  "type": "thought",
+  "classes": "fx",
+  "triangle": "bottom left",
+  "flip": true,
+  "order": "1",
+  "top": "200",
+  "left": "200",
+  "width": "200"
+});
+popcorn.text({
+  "start": 18.905,
+  "end": 19.915,
+  "target": "video-overlay",
+  "text": "Popcorn.js",
+  "escape": false,
+  "multiline": false
+});
+popcorn.photo({
+  "start": 3.988,
+  "end": 6.872,
+  "target": "video-overlay",
+  "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAA/CAYAAABemHLgAAAbL0lEQVR4Xu1dCXhURbY+SWfrbCQhG0lMCASSCLKqT5Et7uOCOt/4RnzqzNNxwUFmxgXZhrCjCLPggjruzqjjiH4DojMKCAICDihCyA4hARJCyEr2dJJ3/upUp/qmO92dbpVHbvlhkr51q27V/eucv06dc9qrkwvpRZ+BfjYDXjrw+9kb14crZkAHvg6EfjkDOvD75WvXB60DX8dAv5wBHfj98rXrg9aBr2OgX86ADvx++dr1QevA1zHQL2dAB36/fO36oHXg6xjolzOgA79fvnZ90DrwdQz0yxnQgd8vX7s+aB34Ogb65QzowHfhte/bv5/q6urIy8tL3AWP7rFjx1J4WJgLrRDlHymkN994k9uBm6AXmdraKCkpiR68/wHy9vZ2qS29ct9mQAe+C/M2d/58ysvPJz8/P3FXS3MzLV22lEamX+hCK0QHDx2iFU89RQYGORZRS0sLpaen06KFC88L4HcS/6eEeWCM+O9cKjrwXXgbmYsXU2FhoQX4za2ttJAXQ3pamgutEGVlZdGq1asFyAGKVm4nNXU4LZg3//8N8Otaq+lM0ykqOVtIFY2l/Hs51bRUUG1rFTWb6qm1s5U6OjvI28ub/L2NFOgTRMG+YRTmH0XRgXEUE5hAF4QMoShjHAX6Brs0f56orAPfhVnsz8AH0POrD9Lhyv2UU7WfjtfnUlVzCbW015Cpw8QynsjAQt3M3npKd2gA1Gnn/+Gqj7cPBfgMpGhjMiUGp9OIgZdQasQYGh520Q+yEHTg68C3OwMA+zend9Lu0s8oq+orOtVwmNo6WswA9/IR9wH0KPjM28uff/qSjyGIfLwCLO2aOpuptb2O6U8Ha4EWMjH4zfXNbXR2msRnRkMwJYSMoTGRk2hC3HV0YcT4720R6MDXgW81A5DLhTVZtLn4I9pZ9k8qrf+mS5r7889WBnon+Xr70wD/RIoPGk5JIakUFRhPsUEJNDAghj+PID++bvD25X8Gau9o539t1MoLpraliilRGZUzNSqtL6Li+nw63VjEFKlQtAst4EUGsbjw++DQy2jCoBvpmsSfUlLocBfelOOqOvAdz5Glhi2qs2TxIho2ZKgLrZzbHH9f+Xaas+snTGGayN9gZAndJqR6mH8SDR0wjinJpTQm6nJKCRvBn0W6NG5tZRMviIrmMjpSnU2HznxNh6p2U1HtPmpoOyMWFwoWTJRxGP1x8sceBb/HgH+ytJSys7PpVHm5sFJYCnM7U3s7XXvdtTQkaTAdP36cNn36Kfn4mNWc3cL3eRu8KTIikoYNSxFWD1ul3dROWdmH6ciRI1RTW0Md7R3CROhy4f58fH0pIizcbn9a4LfzuEaPGkXhEeHUwRJLHbN/QAAlJSbS6NGjaUBoqNXjOLO53bBhI5WeKnNqnnrry9V5eCXrKXojey6F+EXyNBooNWwCTY6/icZFT7QCXgVL7r2nttL4mEk0KDDRqpujtTn0ZvZqajI10g3Jd9LUhJudeox2XmBH63LoP6e2sbb5hI7U7GU6ZKCzrWdo3iXvcFvTnWrHmUpuAx8v/x/r19Nnn31GZ+vPigf18u4GXicDos3URrNnP0GXXXIpHThwgJYsX26xjDh6yPZ2E/n7+dPYMWPovvvupbAB3Tbz46Un6dVXXqG8AlaVba1sEWFV2QfMy2fAs3Z0tov+xjBg7733XooID7cr8YVEYotMewcvNk1BWyhRUZF01913ibHL4gzw5//+95STm+vUPKl9TZ9+B11x+QRH02r3+uNf3k7fVKzn9xhAT4x/g65L+u8edcH9Z227gTe6e+gvV38lNIAsjW319OTOO2hH2Sa6OHoqrZ70jz5pBmiD9/NfpL9kzRJU66bBj9LjF6/p87i0N7oN/I83baLX3niDgoOCyGAwiPbb+EAGUh6lr8CHjVvay2ERqDt7lq66MoMefmiGsBo0NjWxLXwl5eXlUVBgkPgM9ZpVbcP9e3E7AV12dwvAuV4LP2OnAljU82eJL9tBfxMnTKDfzJplGZdW4tsDPtrx7poLLAx/f39axJQoMT5BPIIzwF+QuZA1aI5D4Gv78uW+F2dmigMxVwsAPWPr1VTWcJDpRRqD+ksK9ete+LI9Wa/k7Df04pX/YfpzsaWrdd8tobdzMynSmERrJm+kYWyl6WuB5pi5LYPNo6cpLeI6WjtlA3N/3742Z3Wf28BftmIFHc7JsYAL4EtOTqYwPs3sYPDj7w4G2LRbb6HhQ1OoqKiI1n/4oQVMtkYhgV1QUGC53GYyUXRUFD3F/WFB4PRzyeIlggpIsAYGGmlYyjDLPfgcCyGfD53kgQp++vI9qamp4l78jXrQXLksYdEP/sazo5+nn37aIvW1wEedYcOHU0hIiKiPgnuP8hhra2os4K+vr6eZM2fSlEmTnAb+u+++S6CPUpjYmicsLvRVU1Vl1deMhx6iKzMyXAZIQc0hmvnFFN5c1tDoyFvpj1M+tNlGWWMJ/ZoXSFVzAT2f0Q38nSf/RQv33Mz3m+jJ8W/TTUPucvkZ1BugPR7+4ho+K9jHWiOZXrpqOy/IQW61KW/2CPBzGPgACUBkYuDMmT2bRo4c6dYDlpWVEdQ9Fg3ABEDGREfTimXLhAQFDVi+ciWbzpha4TpL8KFDhwppp5aq6mqa/eST1MaSF0ABwLEoV/HJaQDzcFnw+ZNz54o9ChYGgOzLY8JCi4w0b+JsbW4XsWROVRYb6q197jn6avduMna1X99QT4/8eiZNdgH4zk7e8+teoB07d1n6amxsoocefIAypk4VTRTX5dOrzNsNTAN7KzhoqmTenlO9Q1SLZPt6Wvgl4hBKLah3sqGIsis/4wOocQz8fwsqg8Xw22030rGzWXRr8kyac+laj5zWzt91N31V9ld+fiPTpi1WtMrZObJV73sB/uwnnqBRF/VdxeFBIe1+z0f49oCfyxQH2kYF/pAhQwTw1QOU02cqaB6fiGqBv4L3GaBnsoCSzFuwwAr4WMwrHQA/k+9JY+2hlj8/+yzt3rPnnAD+gYrd9MvPJ5CvE3sfuAn5d7kKYYvSYlZiPQpjn2KZyjw67lmxccWmdOHu/6XNJ/5K6eGX0Z+mbOwTr7fVF6jTO/mZfC5AvOfw3Ab3ewH+E48/LqwdzhZIa61vx4kTJ2gpg9NV4Gv9XU5XnKZ58xf0AP5y1hwhwd1H5bBEQcOoEt8Z4NtyWfg+gI/5wTypBQt83UsvWWkXrcSH9eXz4g/4wMiBFc3Zl8X1/A0BNDb6CouV5+9562jtdw9TkE8wrbjiY7o4ZooLrfVe9aPC1+jPB+4TJ76/GrGGfnHhox5p+0cDPsyau5gOHD16lGprazUvFBtkE1Uxd5VFS3XsSfzzCfjQQnv27qUD331H5UzBQCOtgU9UU1NLzewsJ7WcFvgeQUkvjUCjzN01jerY5PjASM8BU3Yp9w04S5iW7DnLzo8C/C+2baO33n6bwH39fP3ML021Q8Kzj/8G1+6vwK/hzTH2CofYk9PA8wBK18NWi7OHrs29nCdbHH/dwcV8IGT2KPV0ya/ZR8XM6yfH3cHS/i2PWV3kcx6u3Ee/2T6Z6VQTTYz7JS2d8LpHhvCDA19SD0gpmN5QsJGEedFKmmnMkP1N4r/x1lu0YeNGq8MvW2cGfjyHquVHC3yV47tzxmEPbTiyGTlwKgPyzR4HWZ5AKDbnD229gvcblezDcxutmfKBRzbNPzjwvzt4kFayiVBaPGBNgdVEa36rZom3detWi7mxvwF/8dKlwgwrzzIgHCaxVSg2NtYKT9hEF5eUWLSjLY6/7fgG4R5s9ov0XMFhX3hANF0aO9Wmvd8TPZ1gn56Ht2ZQfVuJsOU/N3VT11jca/1HAf6qZ56xvFBIMbgjLJg3z2ok5RUVNJfNi/11c7uEN984nBNmYp4ZRGktYN9/rQVp3Usv0vYvd9g1Z7oHjx//bhX4w8OvoRcyPj1/gI/DpIVsFlRLyckTtChzkQ58Bfi2zMTPvfA87dz1lV3g4/Rz7bdzulyAPSvx+WiSQji4ZNrQX3jUkqPiAFRnxheTxentyIgb6U9T/6kD35Yd/3yx6tiS+H0BPjj+/ZsnsB+Tp4mOGZ7QRiG+Rlr0Xx/SxPjrPa4i5Glya3s1+/7cTs9Mft8jfZwTVEeX+D1DDz0FfOFFWbZFOA96ukDi7zj5Ce0ofYcSgkeyNN7k8Q0uFu5jX2awHb+FMhLup8zLXvbIMM5Z4MPzMnNhpk513KQ6HkFJL43UtJyh326/mV0d9tDVCXcJ6455I+2ZsrnkI1r+9U/FAdbPUubSrLErPNLwOQF8W5tbR74658oBVl98dZBlYfWaNb0Gm6tWHbm5nTN3To+MDo58dUAV1nzzOLssOOfVKLMhmCNkexaOp6JADhGcGHeD4PYAOaTy7B3XUgMHmc8a/QL9PHWGR8CJRt7JfZbWHZol2ptx0Vq6M+0Rj7T9gwMfLrnL2LlMmjNhpgsKDqKhXVFMOJpH9gG4HSO4RJZz0ZyJZx/CjnFwfYD1CQXPfqy4uId35iPsnSmd1LBol7M7Bg6m7GVZsOX1OphdjUM5qKW3vmzZ8Z3h+MLYyXvfAIM58gmxsfDV0UYaoB5ceECc7k5bTDNGLxT138z+A72c9RibNSPZmexTK1dld5C6et9jtKHoDyIUcSHvI5wNanHU5w8OfPi5L+I0HSdPlpKR3YhhZ7B1gKX642MQ5yLw8Vy2DpVUH3mkIAkyGilzUSZdEBcv3gcO75atXEF5uRxLwI5y8MHRpheRcQ4hfF369qtxDvLFqn3hMy3wQUX2lG1mUDumH0drcmn9kadE0ylhk+i2offZxI+s52cIpVev+VrwegSOzNt1D20rfY+tLxPZUW2D27Z9eIY+uv02Olj5CZ88h9BzGdvd8u9XB+M28OGqe4ilOCQ4pIOJX/R8tr+P4YgpewW+9K++8iqVsCMaQgV9OMTQUWnlCKuY6Bhaw2cAwi2ZXaEXcnCHD7s84G4AMCUlhZbzwY+ajezU6dMc/TWbWhlcWEwmDlUMD2e3ZD5EC2U/elngpPYEuy+Xcbgf3CgQVQVQPbP6GYqOjBLVZFSU1Fa9PbOMykIMwT13300Xjx9vVR1U7tXXXxcxAA0NDTRi5AhawuZb+ewIqXz7nb/RNnbvaGpqJm8fgxino9LY2EgPz5hB11x9taOqPa7DtfjBzZPFYRFs5i9e+W+bbcBP/v4tU+g4B6KsUwJRYHOfte06Km0ooJ8Ndd+vBov2wS0ZVNGUS4OCRnFfm91eTHJAbgP/w48+ouMMYB9+MaAp7QzkW6dNcxgBhBd7IOsg5edwfpaaassJrb23hXah5v9n+nTh6gC35Q845NHAiwZ0AYCOiYmhn99+u5VbMuJw333vPeGHbw446aBgplZ33jHdyh8f0vRvHPyBFIFoE2OBK8Cd0++0uA289/77wlkMY+2t4N7g4BARuztm9BiOEAu0Wx0L+Dvm/HA9uPWWW3oklMI4v/32Wzp16hQH1XQ7o9lrsLWlVYC+L/EQCDCfsfVaOla3h5M/xdNLHIGljadFvxKQJ+qz6OWrrCOwtp3YSIv3TBOb0XmXvEvXD77D5QUob1D9dGDKXDX57x5xV0D7bgM/r7CAEGGEOFuOZWLe0kEpzNe1Adbq6AGMM1WVHBzOnoUsaSGNcXfvYGJ3WLZwXJiaJsBxlvuE5gAxxb0IcQxkgKUPt/aNhyTPzs/rsg4hhwuJhTOC21F9XMCbc7gengdcF/XQD+pJtwFcb2hscJjtDPfCeQyBLuD/MawxbEVSIUgGix77GYxNG9DSwNIb84TrGEcHp+pwVLCwkxOTKHLgQEdVbV5fuvch2nL8JebURro+cQb9hAO80yPGWVlqsEBW7fsdB4ist8nn1347j17LWUkR/j707NTdLvN90KYsdk5bX/Ay9/GuSDdyT/pK+tXIOX0ak62b3AZ+dl4u1bKUlCoavCw9ZbiIcrJVAPqikmLh9y5yKnb9czQi3AeKM3rESNEX9groW7rjArjBDLKLNHksISUPHT4sqIsMUUQ7oy4c0QP4Bzlbg3TxFRKf+xnF/aE+Cq5jkfdI7KrkiRQVu7zB8EydrGkiGIQIu1TBD3MtNKUsoF0j0tIt48HCzi3IF/xfphp0NEe4Ds2WwgE5kp45c49aZ33BK7Rq//0UERDJp6VnONtZpMi0cPmg62lczERKDEkRaUek5DdyakD5t2wHVOirss95c9zIuXFSnQI+7imqy6V95V/S3vLPqbB6JyeZaua2wzgfzxlaNfFTjx6QuQ18SHyRXaEryy8wkJI8xK7EhxTLyQdgQVHMkhW/eNtMO9dtU0A9WxJf3gaQBQUFU/ow68RDNiU+S2OATCvxsZBaeK9gT+LjOgCpAt/Wc3doFgL86NP4uWRWZUjwwznZbDkxW7Dw7KF4diUHZ2HRUapmjWDoolVSA2mBLPoSccPmK6CQyYMHc1qWvkl88PQ1+x+jQ5X/4uxnTSK/jUwkFeQbSfF8UJUWhvw6F1NK+EgRA2sL/L0tOGiMutYaOll/jI7V5nJKwm8oj92bS5k6NbfXWyWWMvqE02Wxt9Hvxj3tsaguIZtYsvXOMRyIjAIOJIFffTfwO0X+HHXjqDYBSX3kWFG3huCXDoqS1JWBwCwxOeyNueqx4yWWW4XE76ID6KueN4QAhyrxwaUhWdWCTW8uL0412Bx8GrRCC/w8pk5YKFIzoJ80rmehOiyBrSQ+Aut5rIFstVELpDlonEULwuzJAfgDwyNEtbqzdVQAU62iGTBfKtUBjYOQUOf1gvh4835BvjGep1Lm/qrGRXaL5AsSrdKiuCr1YcPP5hyZW0o+5FQjX4hgbwSCmBdBOy9Yc0CMkbVBqF8sDTRyFjX/WBrgF0FhAVEiQSz8/3FaDA/Oto5WltrVnCiqlqpbTlMl/0MGNSSOajLx4u5KP4i20Y8fa5TEkPEii9qUhBs9ZslR58Ft4B8tPiZACFqAAoAhkVIISzBbBRITVEfWBwUBDwYv1QK24Gi3HR/tAoDQJgADQFHEfVuAz9cBwKGDk63bYapQyO1YZVlg4KMdLfCxICXwxfpjYCJLmowbkGCUfeLZsTC0m9cidhMGd5djBDfH+MI5WRUK5kBdtGIzzGZLNSObrXkdzG2occJoC5vfSqUvPBPMpq7m7Le3OJBK5GDFXs6h+SWbFXezxSaH6lvLRXX44iP/JXJfYi3KnFpKWiVLs+o1s5bEojCJe1A/1C+J82am00URl9MlsVO+17yZ4t26K/FLThzvIZkSeOK1L0jOAAALz0tJEaCqYedOTLjAau4BQK3ER9YDSDN5wIW+VeDDzDiYr6sFHBkLrR20omthYuMJraRSFtAN9AcNIdKL4NXwTwBWAh9g1UphtKMdazE/l5XE57ah0eS+Ry5+q/0JA19dtJgj0VeXVsDisDWvpeUs8VXtwn0NYuuWmnjLHqhd/RwUBWnBj9QcFpmTj/PvpY1HONNZJfP5OpbsZy2Zk7VtA+rQGH6GEP4ZxHuIQRQbOETk3hwWfhFL9RHs78PCyEE2CFef2V59t4GPiW9izipfIl7QoJjYHupfPgD4bRnfo9Y3MvDj+B4ric+APcGUQRaRD4clNaSZyJfDh0An0U5XBVyHFSU+1jrvCoB/oqzUSuID+GhHBT7uRz0JfCEVuJ/EuAQLz4YUxlhV+pHEC00r8UF1YBa12OSZfiQMirMAHxqymBeZOgege6rWc3ZekUUC9NFCqxj42Njao5qeAo5sBxoBfB258utba/n3aqYvDeJAq50lOigPkkAZfQJFfvxw3jRHGKNpgG/E95YJ2Zkxug18BIyo9mUACOY7NWeN+iAAbDm/LPWlB/gHUAwf9Gglddlps0pFkcAfxIdYuBca4RTaUa4j9V8s597RtnOKMy2oVAfARzta4KM/LBT5bPgZFx1rAT4keSM/PzSBfKYLWJJrOT5yXmrBCGEgTbxC6/Hi6KH1lH2Os/MKcyfaU7UHNrb2NK4zoOgPddwGPibebAnpDnIYyFxWmgC1kwjAnqmu0gDf37Lxk/VhlsMCsQI+AzZqIJKZmr9FBO2o1/35xFVrv0Y7FZWVlsRIWAA+BrQzsAfwKyrPWDKpyXZVGzwkuboHQFtxrGG0wMdpsWrpAo2KiYq2SGEAFZtSOWVoJzDASPFxcZbxaOcVdaIY0HKjLSsiKL2h2VrjhnN+Ue0z9QcwuzJGt4GPiW/lpLAq8AeEDhAnkbYKDqtwmqrWBxC1LwqbNBwWqcBGPWzacC8kc01dd1oSoRF8fHts6gD8au5PNV5B0iMrsvoMuI7nkikE0S+OxpA0VmoG0A8t8MGnobHUggWkmj0BfNAPKYVB9yDRu4v5jEKle7bmNdAYaM62oBRQrzZOrKvOUyifGtvTuK6A43yu6zbw8YJNAL4SyBzCEy/tz9rJAwhgzoMRVQ2Es2VT1V4HACVdAIesr1MWBtsVDLwwtNxW9Md8Wy1IEIt6KvBxHWZBEeOrVIabhAQ+wNrSajZ3okhap9Vugn5gLyDNlTzYSDZlyr0AqCG0kApW0DSV7jU2NfI+psXqfMOe3Vk7T+hHqxnOZxD3ZWxuAx/SCwc0ampwqO3ekp1CWoMeOTxC0LxRAFCCB5K8kVV8N3rYCsPSUKs5cJIMj0XVvxw+5Lb8ZwA2bcrv4K5MzOjHFq0DoLUgQ4YIPJu6QFT6Aa0BE6Q18JmmKYdOmJsm3k9gnA6LMk9w3YB1S1qiHN7bTyu4DXyAGF/3okp8THqPY33NBOPFYtfP5xu2vXT4unZhAEhq6nDwfK0k11IstGErRaEtiYj2tH2ingQwAA2q5t1lqEZdAFoLMmgO+PzIevjSiAGsYST9QBu1Ck3DdXiC2nLzgAYC+O1JezXVudBC/B+8Sx3Nfz/Fu2XYbgNf+KNoDn97k/auTLhW2gGA6gt1dF325ewzOqoHQJuYT6uLfEBIaA9aB/oHN2o1mgkHenKxAfjY/KoSH/uT3hz77M0b5l4Gpsg6rvj2uPI+zqe6bgP/fJoMR2MBoPENLWpQh/qFGPJ+WG3aAPyu4A982x++vEJqBvjTWAGfb4SJVU1i6+hZ9OvuzYAOfBfmT+4BVIlvNOIb/qwzEeOsQrUOgX4E+vO+p8vhTOxPeG/ULfE5GIeBD6uNXn6YGdCB78I8Yw9gi1ZomwD9sLVXUE9Xrb+yCC7QBrtnHy48ol7VyRnQge/kRKEaKIr2G0KcuR1WJNW8i0Vh4jToasGisGcCdqYPvY5rM6AD37X50mufJzOgA/88eZH6MFybgf8DRioAYeSa+nAAAAAASUVORK5CYII=",
+  "href": "http://rambla.eu/",
+  "width": "150",
+  "height": "150",
+  "top": 164,
+  "left": 29
+});
+popcorn.text({
+  "start": 1.23,
+  "end": 2.23,
+  "target": "Area2",
+  "text": "Also in here!",
+  "escape": false,
+  "multiline": false
+});
+popcorn.googlemap({
+  "start": 2.447,
+  "end": 3.289,
+  "target": "video-overlay",
+  "type": "HYBRID",
+  "zoom": 12,
+  "lat": "",
+  "lng": "",
+  "location": "De Winterstraat, Antwerpen, België",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?feature=player_embedded&amp;v=PcR0eC1Gcbg&amp;butteruid=1347206278594#!" , "http://www.youtube.com/watch?feature=player_embedded&amp;v=PcR0eC1Gcbg&amp;butteruid=1347206278595#!" , "http://www.youtube.com/watch?feature=player_embedded&amp;v=PcR0eC1Gcbg&amp;butteruid=1347206278596#!" ], {});
+popcorn.pop({
+  "start": 1.988,
+  "end": 4.705,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/music.png",
+  "text": "Prem aquí per veure el videoclip!",
+  "left": 61,
+  "top": 77,
+  "link": "http://www.youtube.com/watch?v=FhJR6OO1X8Y"
+});
+popcorn.pop({
+  "start": 14.244,
+  "end": 18.721,
+  "target": "pop-container",
+  "exit": 0.3,
+  "text": "JENIFER, la cançó que va portar al grup a la fama amb 1.621.339 reproduccions en un any!",
+  "icon": "images/info.png",
+  "left": 49,
+  "top": 76
+});
+popcorn.pop({
+  "start": 20.174,
+  "end": 24.593,
+  "target": "pop-container",
+  "exit": 0.3,
+  "left": 50,
+  "top": 79,
+  "icon": "images/info.png",
+  "text": "A finals d’any ja treuen CD amb 13 Cançons!",
+  "link": "http://www.diaridegirona.cat/cultura/2011/11/29/catarres-completen-any-gloria-cd-personalitzat/532765.html"
+});
+popcorn.pop({
+  "start": 26.86,
+  "end": 31.453,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/music.png",
+  "text": "Jordi Pujol també recita la cançó de JENIFER!",
+  "left": 50,
+  "top": "80",
+  "link": "http://www.youtube.com/watch?v=s80Y5Jcndq8"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

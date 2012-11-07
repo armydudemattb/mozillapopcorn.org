@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.mp4?butteruid=1347974789744" , "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.ogv?butteruid=1347974789745" , "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.webm?butteruid=1347974789746" ], {});
+popcorn.pop({
+  "start": 10.29,
+  "end": 12.3,
+  "target": "pop-container",
+  "exit": 0.3,
+  "left": 43,
+  "top": 44,
+  "icon": "images/error.png",
+  "text": "您是否理解教学智能交互的含义：\nA.理解，请继续。\nB.不太明白，再看一遍。\n（网络非线性视频概念）"
+});
+popcorn.pop({
+  "start": 14.941,
+  "end": 16.713,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/thumbsup.png",
+  "text": "你对上述视频的印象是：\nA.很好，印象深刻！\nB.不错，很有潜力！\nC.继续努力！\nD.其它，您的留言：\n————————————————\n————————————————\n————————————————",
+  "left": 40,
+  "top": 40
+});
+popcorn.pop({
+  "start": 0,
+  "end": 7.394,
+  "target": "pop-container",
+  "text": "智能交互：网络视频效果监控的新技术\n开启网络视频教学的新时代！\n",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 44,
+  "left": 35,
+  "icon": "images/trophy.png"
+});
+popcorn.pop({
+  "start": 7.832,
+  "end": 10.068,
+  "target": "pop-container",
+  "exit": 0.3,
+  "text": "教学视频智能交互的概念：就是在视频播放的过程中，插入教师预设的交互脚本，典型的例子是，插入课堂小测试，以监控网络学员的学习效果。网络学员的答题（交互）反馈，会被教师预设的交互逻辑进行处理，如实现对视频播放的控制，推送相应的附加信息等。",
+  "icon": "images/heart.png",
+  "left": 32,
+  "top": 41
+});
+popcorn.pop({
+  "start": 17.08,
+  "end": 19.07,
+  "target": "pop-container",
+  "text": "谢谢您！",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/heart.png"
+});
+popcorn.pop({
+  "start": 12.699,
+  "end": 14.466,
+  "target": "pop-container",
+  "text": "这种视频交互方式还能向网络学习者推送丰富的附加信息，如图片、文字、外部网络资源等等，提高了网络学习者获取有效学习资源的能力。",
+  "link": "http://www.google.com",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": 51,
+  "icon": "images/eye.png"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

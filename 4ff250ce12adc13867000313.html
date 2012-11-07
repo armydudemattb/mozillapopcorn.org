@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=ou9YMWlJgkE&feature=youtu.be&butteruid=1341280760901" , "http://youtu.be/ou9YMWlJgkE?butteruid=1341280760902" ], {});
+popcorn.pop({
+  "start": 1.973,
+  "end": 6.465,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/thumbsup.png",
+  "text": "Always good to start with something they've already learned.",
+  "left": "70",
+  "top": "40"
+});
+popcorn.pop({
+  "start": 7.21,
+  "end": 11.951,
+  "target": "pop-container",
+  "exit": 0.3,
+  "text": "Why not link to the 1st law video, in case they haven't watched it?",
+  "icon": "images/cone.png",
+  "left": "30",
+  "top": "70"
+});
+popcorn.pop({
+  "start": 12.399,
+  "end": 17.521,
+  "target": "pop-container",
+  "exit": 0.3,
+  "left": 20,
+  "top": 69,
+  "icon": "images/cone.png",
+  "text": "You say 'some type of net force.' Better to say unbalanced, or at least non-zero net force."
+});
+popcorn.pop({
+  "start": 17.91,
+  "end": 26.874,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/brokenheart.png",
+  "text": "Ouch! An object's past constant acceleration has nothing to do with it's future acceleration. Be careful - this is REALLY important stuff here.",
+  "left": "20",
+  "top": 71
+});
+popcorn.pop({
+  "start": 33.239,
+  "end": 39.868,
+  "target": "pop-container",
+  "text": "Again - net force is a mathematical model - not a real force. Be explicit.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/cone.png"
+});
+popcorn.pop({
+  "start": 50.506,
+  "end": 56.838,
+  "target": "pop-container",
+  "text": "Good to take the time to write it out",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/thumbsup.png"
+});
+popcorn.pop({
+  "start": 75.179,
+  "end": 82.09,
+  "target": "pop-container",
+  "text": "Why is it important that we know they're vectors? Words like 'vector' without explanation can really throw a kid off.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/cone.png"
+});
+popcorn.pop({
+  "start": 105.254,
+  "end": 113.823,
+  "target": "pop-container",
+  "text": "Forces are interactions between two objects. Force is probably the hardest concept in physics - make it real by including the object applying the force.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 66,
+  "left": 24,
+  "icon": "images/cone.png"
+});
+popcorn.pop({
+  "start": 123.653,
+  "end": 130.866,
+  "target": "pop-container",
+  "text": "Careful here - net acceleration? Net means sum, and kids need to know that. What accelerations are you adding here?",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 34,
+  "left": 39,
+  "icon": "images/cone.png"
+});
+popcorn.pop({
+  "start": 132.522,
+  "end": 141.33,
+  "target": "pop-container",
+  "text": "I like the use of 'proportional' here.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 67,
+  "left": 4,
+  "icon": "images/thumbsup.png"
+});
+popcorn.pop({
+  "start": 144.988,
+  "end": 153.724,
+  "target": "pop-container",
+  "text": "You're introducing mass as a mathematical necessity, not a physical reality!",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 68,
+  "left": 0,
+  "icon": "images/eye.png"
+});
+popcorn.pop({
+  "start": 163.751,
+  "end": 174.961,
+  "target": "pop-container",
+  "text": "You just covered inertia - why are you using the chemists' definition of mass? It's not wrong, but it confuses an already confusing topic.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/thumbsdown.png"
+});
+popcorn.pop({
+  "start": 197.382,
+  "end": 207.391,
+  "target": "pop-container",
+  "text": "I like the attempt at exploring alternative possibilities, but here it feels like a distraction.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/thumbsdown.png"
+});
+popcorn.pop({
+  "start": 226.208,
+  "end": 241.022,
+  "target": "pop-container",
+  "text": "This needs more explanation - units are notoriously difficult conceptually. Give them something concrete to hold on to (1N is about the gravitational pull on a baseball)",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/info.png"
+});
+popcorn.pop({
+  "start": 252.232,
+  "end": 260.64,
+  "target": "pop-container",
+  "text": "I like the words 'force acting on a mass'.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/thumbsup.png"
+});
+popcorn.pop({
+  "start": 284.656,
+  "end": 305.094,
+  "target": "pop-container",
+  "text": "This is why Newton's 2nd Law is better taught/learned/expressed as a = f_net/m. Acceleration is proportional to the ratio of net force to mass.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 32,
+  "left": 29,
+  "icon": "images/error.png"
+});
+popcorn.pop({
+  "start": 312.335,
+  "end": 330.263,
+  "target": "pop-container",
+  "text": "If you're going to teach it as f = ma, at least have them solve it algebraically before substituting values. Including units during algebraic manipulations throws so many kids off the big idea.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 14,
+  "left": 16,
+  "icon": "images/cone.png"
+});
+popcorn.pop({
+  "start": 339.717,
+  "end": 352.504,
+  "target": "pop-container",
+  "text": "WAIT! So what?! What does acceleration tell you? This is why people hate physics - they do all this work for an answer that means nothing to them. ",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/brokenheart.png"
+});
+popcorn.pop({
+  "start": 385.14,
+  "end": 393.54,
+  "target": "pop-container",
+  "text": "I like the comparison in an effort to build algebraic understanding of relationships between variables.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/thumbsup.png"
+});
+popcorn.pop({
+  "start": 402.655,
+  "end": 432.146,
+  "target": "pop-container",
+  "text": "This is where it falls apart though. Draw a graph so that students can see the pattern you're describing. This is so much more important that being able to calculate a. Not trying to be rude, but you just blew the punchline. This is what the search for the Higg's is all about!!!",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 32,
+  "left": 23,
+  "icon": "images/thumbsdown.png"
+});
+popcorn.pop({
+  "start": 272.025,
+  "end": 277.062,
+  "target": "pop-container",
+  "text": "Not how I would cover vectors, but it's good to point out that the information about direction is there.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/thumbsup.png"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

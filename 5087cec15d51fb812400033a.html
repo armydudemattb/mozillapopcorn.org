@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=sLMrW9KXEts&amp;butteruid=1351062161650" ], {});
+popcorn.text({
+  "start": 1.639,
+  "end": 2.656,
+  "target": "above-right",
+  "text": "Popcorn.js",
+  "escape": "",
+  "multiline": ""
+});
+popcorn.text({
+  "start": 3.005,
+  "end": 4.041,
+  "target": "above-right",
+  "text": "this better work",
+  "escape": false,
+  "multiline": false
+});
+popcorn.googlemap({
+  "start": 7.038,
+  "end": 10.207,
+  "target": "above-right",
+  "type": "ROADMAP",
+  "zoom": 14,
+  "lat": "",
+  "lng": "",
+  "location": "98 merrigang st bowral",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.text({
+  "start": 0.648,
+  "end": 4.053,
+  "target": "above-right",
+  "text": "Listen up cunts ",
+  "escape": false,
+  "multiline": false
+});
+popcorn.image({
+  "start": 4.365,
+  "end": 6.925,
+  "target": "above-right",
+  "href": "http://1.bp.blogspot.com/-ZrJk_MWo5Rw/T1_kRqPmfRI/AAAAAAAAAKg/0DUl-mg35vU/s320/ShereKhan%255B1%255D.png",
+  "src": "http://1.bp.blogspot.com/-ZrJk_MWo5Rw/T1_kRqPmfRI/AAAAAAAAAKg/0DUl-mg35vU/s320/ShereKhan%255B1%255D.png",
+  "text": "awesome fghter"
+});
+popcorn.text({
+  "start": 10.606,
+  "end": 12.061,
+  "target": "above-right",
+  "text": "this might link",
+  "escape": true,
+  "multiline": false
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

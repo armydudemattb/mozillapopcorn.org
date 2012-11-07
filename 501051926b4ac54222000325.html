@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=kBBVR_5shug&amp;butteruid=1343245457468" , "http://www.youtube.com/watch?v=kBBVR_5shug&amp;butteruid=1343245457469" , "http://www.youtube.com/watch?v=kBBVR_5shug&amp;butteruid=1343245457470" ], {});
+popcorn.text({
+  "start": 18.575,
+  "end": 39.884,
+  "target": "video",
+  "text": "In the 2008-2009 school year, 4% of 9-12th graders nationwide dropped out of high school. ",
+  "escape": true,
+  "multiline": true
+});
+popcorn.text({
+  "start": 39.884,
+  "end": 44.367,
+  "target": "above-right",
+  "text": "Popcorn.js",
+  "escape": "",
+  "multiline": ""
+});
+popcorn.googlemap({
+  "start": "0",
+  "end": 10.291,
+  "target": "above-right",
+  "type": "ROADMAP",
+  "zoom": 15,
+  "lat": "",
+  "lng": "",
+  "location": "900 Fallon St Oakland, CA 94607",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.image({
+  "start": 10.419,
+  "end": 18.746,
+  "target": "video",
+  "href": "http://mozillapopcorn.org/wp-content/themes/popcorn/images/for_developers.png",
+  "src": "http://multiamerican.scpr.org/files/2011/07/desks-620x413.jpg",
+  "text": ""
+});
+popcorn.image({
+  "start": 24.212,
+  "end": 38.56,
+  "target": "above-right",
+  "href": "",
+  "src": "http://www.all4ed.org/files/Diplomas_Count_Graph.jpg",
+  "text": ""
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

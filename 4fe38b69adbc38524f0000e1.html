@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=4OhW9u9R49w&feature=plcp&butteruid=1340311140634" ], {});
+popcorn.googlemap({
+  "start": "0",
+  "end": 1.774,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 5,
+  "lat": "46.652153683270306",
+  "lng": "-95.70747647887936",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 1.753,
+  "end": 3.433,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 8,
+  "lat": "47.080300048809775",
+  "lng": "-96.32271085387936",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 3.231,
+  "end": 5.235,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 11,
+  "lat": "47.290764452247856",
+  "lng": "-96.50261197692623",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 4.917,
+  "end": 10.952,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 19,
+  "lat": "47.296451227313376",
+  "lng": "-96.52118359214536",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.text({
+  "start": "0",
+  "end": 10.952,
+  "target": "above-right",
+  "text": "The Location Where this got blown up at",
+  "escape": false,
+  "multiline": false
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

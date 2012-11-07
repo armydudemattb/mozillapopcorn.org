@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?NR=1&amp;v=sFu9_b-BsIs&amp;butteruid=1348514868001" ], {});
+popcorn.pop({
+  "start": 3.7,
+  "end": 4.875,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/info.png",
+  "text": "STOOOP!",
+  "left": 67,
+  "top": 63
+});
+popcorn.pop({
+  "start": 6.725,
+  "end": 7.738,
+  "target": "pop-container",
+  "exit": 0.3,
+  "text": "No, No!",
+  "icon": "images/info.png",
+  "left": 42,
+  "top": 36
+});
+popcorn.pop({
+  "start": 10.29,
+  "end": 12.005,
+  "target": "pop-container",
+  "exit": 0.3,
+  "left": 66,
+  "top": "30",
+  "icon": "images/thumbsup.png",
+  "text": "Tighten that tie"
+});
+popcorn.pop({
+  "start": 21.878,
+  "end": 24.556,
+  "target": "pop-container",
+  "text": "tape recorder...",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 44,
+  "left": 61,
+  "icon": "images/audio.png"
+});
+popcorn.pop({
+  "start": 29.978,
+  "end": 32.239,
+  "target": "pop-container",
+  "text": "yes, that one...",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 32,
+  "left": 64,
+  "icon": ""
+});
+popcorn.pop({
+  "start": 11.556,
+  "end": 13.784,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/money.png",
+  "text": "It&#39;s enough...",
+  "left": 20,
+  "top": 52
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.mp4?butteruid=1342891510355" , "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.ogv?butteruid=1342891510356" , "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.webm?butteruid=1342891510357" ], {});
+popcorn.pop({
+  "start": 1.724,
+  "end": 3.682,
+  "target": "pop-container",
+  "text": "First, the most important step: adding the kernels.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 83,
+  "left": 25,
+  "icon": "images/info.png"
+});
+popcorn.pop({
+  "start": 6.117,
+  "end": 8.249,
+  "target": "pop-container",
+  "text": "This is when having control of space and time comes in handy ;)",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 83,
+  "left": 21,
+  "icon": "images/time.png"
+});
+popcorn.pop({
+  "start": 8.909,
+  "end": 10.797,
+  "target": "pop-container",
+  "text": "Next, add butter. Unless you&#39;re one of those people that eats theirs without. ",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 83,
+  "left": 13,
+  "icon": "images/info.png"
+});
+popcorn.pop({
+  "start": 11.864,
+  "end": 13.999,
+  "target": "pop-container",
+  "text": "Lastly, stuff your face with popcorn.\n",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 83,
+  "left": 34,
+  "icon": "images/info.png"
+});
+popcorn.pop({
+  "start": 3.818,
+  "end": 5.588,
+  "target": "pop-container",
+  "text": "If you don&#39;t do this, you can&#39;t proceed any further.",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 83,
+  "left": 27,
+  "icon": "images/error.png"
+});
+popcorn.pop({
+  "start": 14.273,
+  "end": 16.887,
+  "target": "pop-container",
+  "text": "If you&#39;re not stuffing your face, you&#39;re not doing it right (like this guy).",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 83,
+  "left": 16,
+  "icon": "images/error.png"
+});
+popcorn.pop({
+  "start": 10.852,
+  "end": 11.796,
+  "target": "pop-container",
+  "text": "Weirdo...",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 83,
+  "left": 47,
+  "icon": "images/thumbsdown.png"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

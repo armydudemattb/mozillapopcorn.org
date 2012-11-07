@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://youtu.be/50XhTmyOyss?butteruid=1350718638881" , "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.ogv?butteruid=1350718638882" , "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.webm?butteruid=1350718638883" ], {});
+popcorn.googlemap({
+  "start": 35.786,
+  "end": 52.778,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 11,
+  "lat": "",
+  "lng": "",
+  "location": "swindon",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.twitter({
+  "start": 32.274,
+  "end": 43.191,
+  "target": "above-right",
+  "src": "@flipboard",
+  "height": "200",
+  "width": "250"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

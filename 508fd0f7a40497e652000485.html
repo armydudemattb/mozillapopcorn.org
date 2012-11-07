@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=zgBtr5NfceE&amp;feature=related&amp;butteruid=1351599534618" ], {});
+popcorn.googlemap({
+  "start": 9.175,
+  "end": 54.555,
+  "target": "above-right",
+  "type": "ROADMAP",
+  "zoom": 10,
+  "lat": "",
+  "lng": "",
+  "location": "Shenkeng, Taiwan",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.image({
+  "start": 0,
+  "end": 12.647,
+  "target": "above-right",
+  "href": "http://mozillapopcorn.org/wp-content/themes/popcorn/images/for_developers.pnghttps://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYYBi_bE_GCSs9chjDLpxioIDviMXekaWQYEEWgFY11yXW5X0w",
+  "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYYBi_bE_GCSs9chjDLpxioIDviMXekaWQYEEWgFY11yXW5X0w",
+  "text": ""
+});
+popcorn.text({
+  "start": 43.892,
+  "end": 62.243,
+  "target": "above-right",
+  "text": "&lt;a href=&#34;scottkabel.blogspot.com&#34;&gt;Click here to visit my blog&lt;/a&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

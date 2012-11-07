@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "https://dl.dropbox.com/u/56648768/OmniPres/www/howto.mp4?butteruid=1349977008297" ], {});
+popcorn.text({
+  "start": "",
+  "end": 5,
+  "target": "video",
+  "text": "Quick Instructions ",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": "0",
+  "end": 20.058,
+  "target": "above-right",
+  "text": "&lt;h2&gt;How to Make an Omniture Microsite&lt;/h2&gt;&lt;p&gt;First, some navigation notes. The content in this box will change as the video plays. So the video will show how I built this while the text here will describe it and give you relevant links.&lt;p&gt;Also, you can click on the menu to navigate, or use the left/right arrows on the bottow menu, or use the left/right arrows on your keyboard, or swipe across the bottom bar if on a touch enable device.",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 64.011,
+  "end": 83.15,
+  "target": "above-right",
+  "text": "  &lt;h2&gt;BTW&lt;/h2&gt;           &lt;div id=&#34;footnote&#34;&gt;These are some of the new ad units we are rolling out Tribune wide. They are a lot like the &#34;Devil&#34; ads that AOL sites have. One advertiser essentially owns the whole right rail and has space for a traditional cube, a social media widget, and a video.&lt;/div&gt;           &lt;p&gt;&lt;a class=&#34;btn&#34; href=&#34;http://tribuneinteractive.com/creative/demos/risingstar/portrait/TRIB_Portrait_RisingStar_Demo_0612.html&#34;&gt;See Ads&lt;/a&gt;&lt;/p&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 63.433,
+  "end": 117.605,
+  "target": "above-right",
+  "text": "  &lt;h2&gt;Goal&lt;/h2&gt;           &lt;div id=&#34;footnote&#34;&gt;My goal here is to create a website that will always have the latest traffic numbers from Omniture. Unfortunately I have no API/feed access so this is what I have come up with for now. It is refreshed every day at 3AM and all content is easily searchable. I even put our rate card on here too. It is essentially the next evolution of my Daily Dashboard PDF that is available in Dropbox.&lt;/br&gt;&lt;p&gt;It&#39;s not a perfect system, but follow along if you want to see how it is built&lt;/div&gt;           &lt;p&gt;&lt;a class=&#34;btn&#34; href=&#34;https://www.dropbox.com/s/n6a9xaodrpqk1ek/Daily%20Dashboard%202.0.pdf&#34;&gt;View PDF&lt;/a&gt;&lt;/p&gt;",
+  "escape": false,
+  "multiline": false
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

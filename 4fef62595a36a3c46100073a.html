@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/newscaster/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>News Caster</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic|Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/plugins/titlecard/popcorn.titlecard.css">
+  <link rel="stylesheet" href="../shared/plugins/shrink/popcorn.shrink.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+  <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titlecard/popcorn.titlecard.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h2 class="logo">knn report</h2>
+    <article class="cube-container">
+      <section class="cube">
+        <div>
+          <div class="cube-side">
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-top"></div>
+        <div class="cube-bottom"></div>
+        <div class="cube-shadow"></div>
+      </section>
+    </article>
+  </header>
+  <div role="main">
+    <section id="video-container" class="video-container">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"
+        style="width:800px; height:450px;"></div>
+      <div id="video-overlay" class="video-overlay" data-butter="target">
+        <div id="upper-corner" class="upper-corner" data-butter="target"></div>
+      </div>
+    </section>
+    <section class="cf suplementary">
+      <article class="block" id="Area1" data-butter="target">
+      </article>
+      <article class="block">
+      </article>
+      <article class="block" id="Area2" data-butter="target">
+      </article>
+    </section>
+  </div>
+</div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://youtu.be/JSmjprKySlE?butteruid=1341089266536" , "http://videos-cdn.mozilla.net/serv/webmademovies/Moz_Doc_0329_GetInvolved.webm?butteruid=1341089266537" ], {});
+popcorn.text({
+  "start": "0",
+  "end": 1.007,
+  "text": "",
+  "target": "Area1",
+  "escape": false,
+  "multiline": false
+});
+popcorn.titlecard({
+  "start": 4.756,
+  "end": 7.64,
+  "target": "video-overlay",
+  "title": "DJ BREEZIE FIFER PREZZTO AND FABO",
+  "subheading": "HAPPY B DAY "
+});
+popcorn.zoink({
+  "start": 7.401,
+  "end": 9.496,
+  "target": "video-overlay",
+  "text": "WE LOVE U BREEZIE ND PREZZTO ",
+  "type": "speech",
+  "triangle": "top left",
+  "flip": false,
+  "classes": "icon-check",
+  "order": "1",
+  "top": "232",
+  "left": "230",
+  "width": "230"
+});
+popcorn.photo({
+  "start": 3.314,
+  "end": 4.337,
+  "target": "video-overlay",
+  "src": "http://sphotos.xx.fbcdn.net/hphotos-ash4/299673_235916009804713_1462990701_n.jpg",
+  "href": "",
+  "width": 299,
+  "height": 191,
+  "top": 219,
+  "left": 3
+});
+popcorn.photo({
+  "start": 3.925,
+  "end": 6.83,
+  "target": "video-overlay",
+  "src": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/592166_262543077183254_1019208202_n.jpg",
+  "href": "",
+  "width": 529,
+  "height": 172,
+  "top": 29,
+  "left": 268
+});
+popcorn.text({
+  "start": 1.23,
+  "end": 2.23,
+  "target": "Area2",
+  "text": "",
+  "escape": false,
+  "multiline": false
+});
+popcorn.photo({
+  "start": 23.692,
+  "end": 24.701,
+  "target": "video-overlay",
+  "src": "http://sphotos.xx.fbcdn.net/hphotos-prn1/522114_369907616378548_1960041249_n.jpg",
+  "href": "",
+  "width": 269,
+  "height": 143,
+  "top": 69,
+  "left": 12
+});
+popcorn.photo({
+  "start": 27.959,
+  "end": 29.15,
+  "target": "video-overlay",
+  "src": "http://sphotos.xx.fbcdn.net/hphotos-ash3/550762_321134694639384_1112979956_n.jpg",
+  "href": "",
+  "width": 279,
+  "height": 382,
+  "top": 29,
+  "left": 516
+});
+popcorn.photo({
+  "start": 3.168,
+  "end": 4.177,
+  "target": "video-overlay",
+  "src": "http://sphotos.xx.fbcdn.net/hphotos-snc7/403255_330187120347907_609805190_n.jpg",
+  "href": "",
+  "width": 267,
+  "height": 261,
+  "top": 43,
+  "left": 439
+});
+popcorn.photo({
+  "start": 27.946,
+  "end": 29.032,
+  "target": "video-overlay",
+  "src": "http://sphotos.xx.fbcdn.net/hphotos-ash4/403526_379388005433513_311643479_n.jpg",
+  "href": "",
+  "width": 393,
+  "height": 138,
+  "top": 41,
+  "left": 31
+});
+popcorn.photo({
+  "start": 23.678,
+  "end": 24.708,
+  "target": "video-overlay",
+  "src": "http://sphotos.xx.fbcdn.net/hphotos-snc6/285474_187068644688282_4546518_n.jpg",
+  "href": "",
+  "width": 280,
+  "height": 176,
+  "top": 222,
+  "left": 55
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

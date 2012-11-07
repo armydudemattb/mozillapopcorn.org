@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=dRj9yCsXTXg&amp;butteruid=1345765630357" , "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.ogv?butteruid=1345765630358" , "http://videos-cdn.mozilla.net/serv/webmademovies/studentresponse.webm?butteruid=1345765630359" ], {});
+popcorn.text({
+  "start": 10.046,
+  "end": 13.897,
+  "target": "above-right",
+  "text": "subway shot, music intro",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 14.755,
+  "end": 19.819,
+  "target": "above-right",
+  "text": "graffitti artist voiceover",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 25.01,
+  "end": 28.337,
+  "target": "above-right",
+  "text": "graffitti is a worldwide phenomenum",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 30.618,
+  "end": 33.67,
+  "target": "above-right",
+  "text": "more gritty shots of brooklyn",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 39.312,
+  "end": 45.768,
+  "target": "above-right",
+  "text": "voiceover continues",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": "0",
+  "end": 3.788,
+  "target": "above-right",
+  "text": "intro titles here; sounds of spray can",
+  "escape": false,
+  "multiline": false
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/newscaster/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>News Caster</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic|Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/plugins/titlecard/popcorn.titlecard.css">
+  <link rel="stylesheet" href="../shared/plugins/shrink/popcorn.shrink.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+  <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titlecard/popcorn.titlecard.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h2 class="logo">knn report</h2>
+    <article class="cube-container">
+      <section class="cube">
+        <div>
+          <div class="cube-side">
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-top"></div>
+        <div class="cube-bottom"></div>
+        <div class="cube-shadow"></div>
+      </section>
+    </article>
+  </header>
+  <div role="main">
+    <section id="video-container" class="video-container">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"
+        style="width:800px; height:450px;"></div>
+      <div id="video-overlay" class="video-overlay" data-butter="target">
+        <div id="upper-corner" class="upper-corner" data-butter="target"></div>
+      </div>
+    </section>
+    <section class="cf suplementary">
+      <article class="block" id="Area1" data-butter="target">
+      </article>
+      <article class="block">
+      </article>
+      <article class="block" id="Area2" data-butter="target">
+      </article>
+    </section>
+  </div>
+</div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=hf8lkzsoASo&amp;feature=plcp&amp;butteruid=1348181209018" ], {});
+popcorn.text({
+  "start": 0,
+  "end": 1,
+  "text": "Here you can put any text you like!",
+  "target": "Area1",
+  "escape": false,
+  "multiline": false
+});
+popcorn.zoink({
+  "start": 11.494,
+  "end": 13.384,
+  "target": "video-overlay",
+  "text": "Like it!",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": true,
+  "order": "1",
+  "top": "200",
+  "left": "200",
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 18.774,
+  "end": 20.664,
+  "target": "video-overlay",
+  "text": "Mmmm! SCOREeeeee",
+  "type": "thought",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": true,
+  "order": "1",
+  "top": 25,
+  "left": 351,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 22.253,
+  "end": 23.046,
+  "target": "video-overlay",
+  "text": "*snap*",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": 66.99998474121094,
+  "left": 437,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 23.373,
+  "end": 24.213,
+  "target": "video-overlay",
+  "text": "*click*",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": true,
+  "order": "1",
+  "top": 53.99998474121094,
+  "left": 430,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 24.586,
+  "end": 25.426,
+  "target": "video-overlay",
+  "text": "*snap*",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": 90.99998474121094,
+  "left": 390,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 25.752,
+  "end": 26.685,
+  "target": "video-overlay",
+  "text": "*click*",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": true,
+  "order": "1",
+  "top": 49.99998474121094,
+  "left": 407,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 32.937,
+  "end": 33.73,
+  "target": "video-overlay",
+  "text": "*snap*",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": 81.99998474121094,
+  "left": 250,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 34.663,
+  "end": 35.456,
+  "target": "video-overlay",
+  "text": "*Snippitty Snapitty* ",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "top left",
+  "flip": true,
+  "order": "1",
+  "top": 190.99998474121094,
+  "left": 281,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 37.089,
+  "end": 37.882,
+  "target": "video-overlay",
+  "text": "*click*",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "top left",
+  "flip": true,
+  "order": "1",
+  "top": 207.99998474121094,
+  "left": 347,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 39.515,
+  "end": 40.308,
+  "target": "video-overlay",
+  "text": "*snap!!!!*",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": 41.99998474121094,
+  "left": 322,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 44.227,
+  "end": 47.726,
+  "target": "video-overlay",
+  "text": "Man...I gotta tell you somethin&#39;",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "top right",
+  "flip": false,
+  "order": "1",
+  "top": 172.99998474121094,
+  "left": 418,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 48.892,
+  "end": 52.672,
+  "target": "video-overlay",
+  "text": "When I walk around town, I keep getting cat-called",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "top right",
+  "flip": false,
+  "order": "1",
+  "top": 152.99998474121094,
+  "left": 445,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 53.721,
+  "end": 57.498,
+  "target": "video-overlay",
+  "text": "Why do women have to always sexualize men&#39;s bodies?",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "top right",
+  "flip": false,
+  "order": "1",
+  "top": "151.99998474121094",
+  "left": "444",
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 58.442,
+  "end": 62.219,
+  "target": "video-overlay",
+  "text": "I ignore the attention, but it keeps getting worse",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "top right",
+  "flip": false,
+  "order": "1",
+  "top": 158.99998474121094,
+  "left": 444,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 63.257,
+  "end": 64.862,
+  "target": "video-overlay",
+  "text": "What should I do?",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "top right",
+  "flip": false,
+  "order": "1",
+  "top": 158.99998474121094,
+  "left": 451,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 78.93,
+  "end": 82.518,
+  "target": "video-overlay",
+  "text": "Am I really to blame because of my clothing?",
+  "type": "thought",
+  "classes": "none",
+  "triangle": "bottom right",
+  "flip": false,
+  "order": "1",
+  "top": "64.99998474121094",
+  "left": "153",
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 84.635,
+  "end": 88.755,
+  "target": "video-overlay",
+  "text": "Is this really what my Friday night comes down to?",
+  "type": "thought",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": "-44",
+  "left": "253",
+  "width": "200"
+});
+popcorn.titlecard({
+  "start": 98.627,
+  "end": 101.717,
+  "target": "video-overlay",
+  "title": "This is not the answer",
+  "subheading": "not cool"
+});
+popcorn.zoink({
+  "start": 74.936,
+  "end": 77.768,
+  "target": "video-overlay",
+  "text": "9 of 10 teen girls report experiencing sexual harrassment",
+  "type": "fact",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": 122.99998474121094,
+  "left": 318,
+  "width": "200"
+});
+popcorn.text({
+  "start": 1.23,
+  "end": 2.23,
+  "target": "Area2",
+  "text": "Also in here!",
+  "escape": false,
+  "multiline": false
+});
+popcorn.zoink({
+  "start": 9.821,
+  "end": 11.426,
+  "target": "video-overlay",
+  "text": "Oooooh Yeah!",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "top left",
+  "flip": false,
+  "order": "1",
+  "top": 242.99998474121094,
+  "left": 263,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 61.369,
+  "end": 63.446,
+  "target": "video-overlay",
+  "text": "Oh God...",
+  "type": "thought",
+  "classes": "none",
+  "triangle": "bottom right",
+  "flip": false,
+  "order": "1",
+  "top": 51.99998474121094,
+  "left": 92,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 65.24,
+  "end": 68.733,
+  "target": "video-overlay",
+  "text": "Well, of course, look what you&#39;re wearing...",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "top left",
+  "flip": false,
+  "order": "1",
+  "top": "200",
+  "left": "200",
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 69.017,
+  "end": 71.566,
+  "target": "video-overlay",
+  "text": "Of course you get cat-called, you need to dress differently",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "top left",
+  "flip": false,
+  "order": "1",
+  "top": "200",
+  "left": "200",
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 71.849,
+  "end": 74.776,
+  "target": "video-overlay",
+  "text": "You&#39;re pretty much asking for it...",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "top left",
+  "flip": false,
+  "order": "1",
+  "top": "200",
+  "left": "200",
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 93.476,
+  "end": 98.112,
+  "target": "video-overlay",
+  "text": "I am sweaty and miserable, why can&#39;t I dress  how I want?",
+  "type": "thought",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": 18.999984741210938,
+  "left": 193,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 89.099,
+  "end": 92.704,
+  "target": "video-overlay",
+  "text": "Sexism is a type of prejudice or discrimination based on gender",
+  "type": "fact",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": 330.99998474121094,
+  "left": 95,
+  "width": "200"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=wx3N_8Xl_4E&amp;butteruid=1350795990834" ], {});
+popcorn.pop({
+  "start": 154.489,
+  "end": 162.555,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "http://www.papaha.com/images/installation/dftspirit.jpg",
+  "text": "More projected artwork can be seen at papaha.com",
+  "left": 74,
+  "top": 70,
+  "link": "http://www.papaha.com/installation/installation.htm"
+});
+popcorn.pop({
+  "start": 69.975,
+  "end": 94.057,
+  "target": "pop-container",
+  "exit": 0.3,
+  "text": "By cutting down and burning our forests we are essentially destroying the lungs of our earth",
+  "icon": "http://t0.gstatic.com/images?q=tbn:ANd9GcRV22cSjiVqIEPsaexeFJkTekWK9TGZygrQAi5tiCbGKT0EySRz_w",
+  "left": 18,
+  "top": 13,
+  "link": "http://environment.nationalgeographic.com/environment/global-warming/deforestation-overview/"
+});
+popcorn.pop({
+  "start": 38.282,
+  "end": 49.868,
+  "target": "pop-container",
+  "exit": 0.3,
+  "left": 0,
+  "top": 74,
+  "icon": "http://t2.gstatic.com/images?q=tbn:ANd9GcR6spZuGlXS8-y7lCvHXh5cAn047TlOtZfvPBVKZu8EkBGjfbtaoQ",
+  "text": "The animated image is of the interior of the human lung which looks like two trees that join together at the trunk. Behind it is the classic blue marble photo of the earth",
+  "link": "http://t2.gstatic.com/images?q=tbn:ANd9GcR6spZuGlXS8-y7lCvHXh5cAn047TlOtZfvPBVKZu8EkBGjfbtaoQ"
+});
+popcorn.pop({
+  "start": 19.198,
+  "end": 30.671,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "http://t2.gstatic.com/images?q=tbn:ANd9GcSy_kmeVuB12_PFC46uDaXkpHWGUQg_4KpLTiI5YTEddmsojrh1",
+  "text": "This is a Site Specific Projected Art Installation onto one of the largest fig trees in San Diego",
+  "left": 52,
+  "top": 56,
+  "link": "",
+  "style": "color:blue;"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

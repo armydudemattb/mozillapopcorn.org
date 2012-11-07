@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/simple/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Simple</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/image/popcorn.image.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/twitter/popcorn.twitter.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="video-background">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"></div>
+    </div>
+    <div id="above-right" class="well" data-butter="target"></div>
+  </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=6vJttTmth6U&amp;butteruid=1349806465238" ], {});
+popcorn.googlemap({
+  "start": 0,
+  "end": 2.936,
+  "target": "above-right",
+  "type": "SATELLITE",
+  "zoom": 5,
+  "lat": "",
+  "lng": "",
+  "location": "italy",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.googlemap({
+  "start": 5,
+  "end": 14.5,
+  "target": "above-right",
+  "type": "HYBRID",
+  "zoom": 12,
+  "lat": "40.84969704099361",
+  "lng": "14.281170664648485",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.text({
+  "start": 15,
+  "end": 25,
+  "target": "video",
+  "text": "http://it.wikipedia.org/wiki/Mimmo_Jodice ",
+  "escape": true,
+  "multiline": false
+});
+popcorn.image({
+  "start": 44.325,
+  "end": 259.275,
+  "target": "above-right",
+  "href": "http://en.wikipedia.org/wiki/File:Post-and-Grant-Avenue.-Look.jpg",
+  "src": "http://www.eclipse-magazine.it/wp-content/uploads/stories/Arte/mimmo_jodice_3.jpg",
+  "text": ""
+});
+popcorn.image({
+  "start": 33.149,
+  "end": 42.469,
+  "target": "above-right",
+  "href": "http://mozillapopcorn.org/wp-content/themes/popcorn/images/for_developers.png",
+  "src": "http://4.bp.blogspot.com/_NX5L9or2O58/TF01JsmS_0I/AAAAAAAAFFA/ktgTWwzqFoU/s1600/Mimmo-Jodice-3.jpg",
+  "text": ""
+});
+popcorn.image({
+  "start": 3.125,
+  "end": 4.974,
+  "target": "above-right",
+  "href": "http://4.bp.blogspot.com/_NX5L9or2O58/TF01JsmS_0I/AAAAAAAAFFA/ktgTWwzqFoU/s1600/Mimmo-Jodice-3.jpg",
+  "src": "http://4.bp.blogspot.com/_NX5L9or2O58/TF01JsmS_0I/AAAAAAAAFFA/ktgTWwzqFoU/s1600/Mimmo-Jodice-3.jpg",
+  "text": ""
+});
+popcorn.twitter({
+  "start": 31.184,
+  "end": 48.061,
+  "target": "video",
+  "src": "#davidalanharvey",
+  "height": "200",
+  "width": "250"
+});
+popcorn.image({
+  "start": 17.028,
+  "end": 31.335,
+  "target": "above-right",
+  "href": "http://en.wikipedia.org/wiki/File:Post-and-Grant-Avenue.-Look.jpg",
+  "src": "http://www.eclipse-magazine.it/wp-content/uploads/stories/Arte/mimmo_jodice_3.jpg",
+  "text": ""
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

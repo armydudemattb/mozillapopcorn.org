@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/newscaster/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>News Caster</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic|Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/plugins/titlecard/popcorn.titlecard.css">
+  <link rel="stylesheet" href="../shared/plugins/shrink/popcorn.shrink.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+  <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titlecard/popcorn.titlecard.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h2 class="logo">knn report</h2>
+    <article class="cube-container">
+      <section class="cube">
+        <div>
+          <div class="cube-side">
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-top"></div>
+        <div class="cube-bottom"></div>
+        <div class="cube-shadow"></div>
+      </section>
+    </article>
+  </header>
+  <div role="main">
+    <section id="video-container" class="video-container">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"
+        style="width:800px; height:450px;"></div>
+      <div id="video-overlay" class="video-overlay" data-butter="target">
+        <div id="upper-corner" class="upper-corner" data-butter="target"></div>
+      </div>
+    </section>
+    <section class="cf suplementary">
+      <article class="block" id="Area1" data-butter="target">
+      </article>
+      <article class="block">
+      </article>
+      <article class="block" id="Area2" data-butter="target">
+      </article>
+    </section>
+  </div>
+</div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=CpAuHwBHDho&butteruid=1341360149646" , "http://www.youtube.com/watch?v=CpAuHwBHDho&butteruid=1341360149647" ], {});
+popcorn.titlecard({
+  "start": 0.672,
+  "end": 3.73,
+  "target": "Area1",
+  "title": "Wayne Kramer",
+  "subheading": "Lifecasters"
+});
+popcorn.zoink({
+  "start": 3.948,
+  "end": 8.568,
+  "target": "video-overlay",
+  "text": "He was the co-founder of the Detroit rock band MC5",
+  "type": "fact",
+  "triangle": "top left",
+  "flip": false,
+  "classes": "none",
+  "order": "1",
+  "top": 21.999984741210938,
+  "left": -215,
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 9.072,
+  "end": 15.204,
+  "target": "Area1",
+  "text": "The MC5 was a 60s American rock band with strong political lyrics",
+  "type": "fact",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": "221",
+  "left": "18",
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 74.34,
+  "end": 83.16,
+  "target": "video-overlay",
+  "text": "<a href=\"http://colorlines.com/archives/2011/05/black_power_yesterday_and_today.html\" target=\"_blank\" >Read more about the black power movement</a>",
+  "type": "none",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": "91.99998474121094",
+  "left": "518",
+  "width": "200"
+});
+popcorn.photo({
+  "start": 9.403,
+  "end": 12.385,
+  "target": "video-overlay",
+  "src": "http://preservation.bavc.org/lifecasters/wp-content/uploads/2012/06/WayneKramer_FlagFist_createW.jpg",
+  "href": "",
+  "width": 801,
+  "height": 463,
+  "top": -1,
+  "left": -2
+});
+popcorn.photo({
+  "start": 6.878,
+  "end": 9.386,
+  "target": "video-overlay",
+  "src": "http://preservation.bavc.org/lifecasters/wp-content/uploads/2012/06/ElektraRecs_MC5PressPhotoW.jpg",
+  "href": "",
+  "width": "825",
+  "height": "464",
+  "top": "-2",
+  "left": "0"
+});
+popcorn.googlemap({
+  "start": 16.044,
+  "end": 22.764,
+  "target": "video-overlay",
+  "type": "STAMEN-TONER",
+  "zoom": 8,
+  "lat": "42.32939652395953",
+  "lng": "-83.034767471875",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.photo({
+  "start": 24.192,
+  "end": 33.865,
+  "target": "video-overlay",
+  "src": "http://info.detnews.com/pix/news/2007/07192007_67riots/1A.jpg",
+  "href": "http://info.detnews.com/pix/photogalleries/newsgallery/07192007_67riots/index.htm",
+  "width": "287",
+  "height": "150",
+  "top": "39",
+  "left": "809"
+});
+popcorn.photo({
+  "start": 34.86,
+  "end": 44.7,
+  "target": "video-overlay",
+  "src": "http://info.detnews.com/pix/news/2007/07192007_67riots/4.jpg",
+  "href": "http://info.detnews.com/pix/photogalleries/newsgallery/07192007_67riots/index10.htm",
+  "width": "204",
+  "height": "249",
+  "top": "-79",
+  "left": "823"
+});
+popcorn.photo({
+  "start": 57.876,
+  "end": 67.876,
+  "target": "video-overlay",
+  "src": "http://info.detnews.com/pix/news/2007/07192007_67riots/68.jpg",
+  "href": "http://info.detnews.com/pix/photogalleries/newsgallery/07192007_67riots/index13.htm",
+  "width": "287",
+  "height": "150",
+  "top": "0.9999847412109375",
+  "left": "811"
+});
+popcorn.photo({
+  "start": 45.864,
+  "end": 56.61,
+  "target": "video-overlay",
+  "src": "http://info.detnews.com/pix/news/2007/07192007_67riots/27.jpg",
+  "href": "http://info.detnews.com/pix/photogalleries/newsgallery/07192007_67riots/index7.htm",
+  "width": "284",
+  "height": "171",
+  "top": "5.9999847412109375",
+  "left": "812"
+});
+popcorn.zoink({
+  "start": 16.044,
+  "end": 22.848,
+  "target": "video-overlay",
+  "text": "Click & explore",
+  "type": "none",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": 70.99998474121094,
+  "left": -132,
+  "width": "200"
+});
+popcorn.text({
+  "start": 7.031,
+  "end": 12.413,
+  "target": "Area1",
+  "text": "<a href=\"http://en.wikipedia.org/wiki/MC5\" target=\"_blank\">Read more about the MC5</a>",
+  "escape": false,
+  "multiline": false
+});
+popcorn.photo({
+  "start": 27.552,
+  "end": 37.393,
+  "target": "video-overlay",
+  "src": "http://info.detnews.com/pix/news/2007/07192007_67riots/22.jpg",
+  "href": "",
+  "width": "287",
+  "height": "155",
+  "top": "253.99998474121094",
+  "left": "810"
+});
+popcorn.photo({
+  "start": 39.06,
+  "end": 49.069,
+  "target": "video-overlay",
+  "src": "http://info.detnews.com/pix/news/2007/07192007_67riots/14.jpg",
+  "href": "http://info.detnews.com/pix/photogalleries/newsgallery/07192007_67riots/index12.htm",
+  "width": "203",
+  "height": "253",
+  "top": "184",
+  "left": "823"
+});
+popcorn.photo({
+  "start": 63.42,
+  "end": 73.588,
+  "target": "video-overlay",
+  "src": "http://info.detnews.com/pix/news/2007/07192007_67riots/641.jpg",
+  "href": "http://info.detnews.com/pix/photogalleries/newsgallery/07192007_67riots/index14.htm",
+  "width": "287",
+  "height": "150",
+  "top": "171.99998474121094",
+  "left": "811"
+});
+popcorn.photo({
+  "start": 50.988,
+  "end": 61.488,
+  "target": "video-overlay",
+  "src": "http://info.detnews.com/pix/news/2007/07192007_67riots/9.jpg",
+  "href": "http://info.detnews.com/pix/photogalleries/newsgallery/07192007_67riots/index9.htm",
+  "width": "185",
+  "height": "195",
+  "top": "194.99998474121094",
+  "left": "813"
+});
+popcorn.photo({
+  "start": 0,
+  "end": 81.77,
+  "target": "Area1",
+  "src": "http://preservation.bavc.org/lifecasters/wp-content/uploads/2012/06/Lifecasters_Logo_bkgd_crop.jpg",
+  "href": "http://preservation.bavc.org/lifecasters/",
+  "width": 299,
+  "height": 57,
+  "top": "100",
+  "left": "200"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

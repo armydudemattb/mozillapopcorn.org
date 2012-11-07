@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/newscaster/butter/../"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>News Caster</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic|Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../shared/css/jquery-ui/jquery.ui.all.css">
+
+  <link rel="stylesheet" href="../shared/plugins/titlecard/popcorn.titlecard.css">
+  <link rel="stylesheet" href="../shared/plugins/shrink/popcorn.shrink.css">
+  <link rel="stylesheet" href="../shared/plugins/zoink/popcorn.zoink.css">
+  <link rel="stylesheet" href="../shared/plugins/flickr/popcorn.flickr.css">
+  <link rel="stylesheet" href="../shared/css/popcorn.transitions.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+
+
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/text/popcorn.text.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/titlecard/popcorn.titlecard.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/photo/popcorn.photo.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/zoink/popcorn.zoink.js"></script>
+  <script src="http://maker.mozillapopcorn.org/external/popcorn-js/plugins/googlemap/popcorn.googlemap.js"></script>
+  <script src="http://maker.mozillapopcorn.org/templates/supported/shared/plugins/flickr/popcorn.flickr.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h2 class="logo">knn report</h2>
+    <article class="cube-container">
+      <section class="cube">
+        <div>
+          <div class="cube-side">
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-side">
+          <div>
+            <h2>knn news</h2>
+          </div>
+        </div>
+        <div class="cube-top"></div>
+        <div class="cube-bottom"></div>
+        <div class="cube-shadow"></div>
+      </section>
+    </article>
+  </header>
+  <div role="main">
+    <section id="video-container" class="video-container">
+      <div id="video" data-butter="media"
+        data-butter-media-controls="true"
+        style="width:800px; height:450px;"></div>
+      <div id="video-overlay" class="video-overlay" data-butter="target">
+        <div id="upper-corner" class="upper-corner" data-butter="target"></div>
+      </div>
+    </section>
+    <section class="cf suplementary">
+      <article class="block" id="Area1" data-butter="target">
+      </article>
+      <article class="block">
+      </article>
+      <article class="block" id="Area2" data-butter="target">
+      </article>
+    </section>
+  </div>
+</div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://youtu.be/5WpfeJrip6U?butteruid=1342507718515" ], {});
+popcorn.zoink({
+  "start": 4.689,
+  "end": 6.804,
+  "target": "video-overlay",
+  "text": "マッシュアップとは？",
+  "type": "speech",
+  "triangle": "bottom right",
+  "flip": false,
+  "classes": "icon-x",
+  "order": "1",
+  "top": "339",
+  "left": "3",
+  "width": "200"
+});
+popcorn.zoink({
+  "start": 16.175,
+  "end": 17.657,
+  "target": "video-overlay",
+  "text": "GirlTalk",
+  "type": "fact",
+  "classes": "none",
+  "triangle": "bottom left",
+  "flip": false,
+  "order": "1",
+  "top": 366,
+  "left": 667,
+  "width": "200"
+});
+popcorn.text({
+  "start": 32.155,
+  "end": 39.065,
+  "target": "video",
+  "text": "カルチャー・ジャミング（英語: Culture jamming）は、既存のマス・メディアを変革しようとするムーブメントの一つである。メディアの物理的なあり方やコミュニケーションの方法論はそのまま利用するが、流通するコンテンツや運営方針に批判精神を持たせようとする。しばしば既存のメディアの経営方針やコンテンツの所有者の意図を敵対的に無視する形で行われる。",
+  "escape": false,
+  "multiline": false
+});
+popcorn.titlecard({
+  "start": 53.218,
+  "end": 54.218,
+  "target": "upper-corner",
+  "title": "【著作権(Copyright)】 ",
+  "subheading": " 知的財産権の一つで、作品の原作者の権利を保護する目的。"
+});
+popcorn.titlecard({
+  "start": 66.054,
+  "end": 68.238,
+  "target": "upper-corner",
+  "title": "ローレンス・レッシグ",
+  "subheading": "クリエイティブコモンズ"
+});
+popcorn.zoink({
+  "start": 125.272,
+  "end": 134.08,
+  "target": "video",
+  "text": "レッシグのTEDでのスピーチ",
+  "type": "speech",
+  "classes": "none",
+  "triangle": "bottom right",
+  "flip": false,
+  "order": "1",
+  "top": "310",
+  "left": "22",
+  "width": "200"
+});
+popcorn.text({
+  "start": 2.461,
+  "end": 9.209,
+  "target": "video",
+  "text": "【マッシュアップ(Mashup)】 音楽やビデオなど、もとからある作品をいくつか組み合わせてつくりだした新しい作品。",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 42.62,
+  "end": 50.032,
+  "target": "video",
+  "text": "著作権法第1条に「文化的所産の公正な利用に留意しつつ、著作者等の権利の保護を図り、もって文化の発展に寄与することを目的とする」とあるように、著作権法の第一の目的は「文化の発展」です。音楽、文芸、学術、美術などの文化的な著作物を創作した者や著作物を伝えるのに重要な役割を果たす者を保護するのは、そうした人々が文化の発展に貢献する重要な役割を果たすと考えられているからです。",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 65.696,
+  "end": 69.312,
+  "target": "video",
+  "text": "ローレンス・レッシング(Lawrence Lessig) アメリカの法学者。フリーカルチャーの理念の元で著作権拡大に反対し、著作権の厳格な利用から創作活動の自由を保護するためにクリエイティブ・コモンズを設立した。また、フリーソフトウェア財団の理事も勤めている。",
+  "escape": false,
+  "multiline": false
+});
+popcorn.googlemap({
+  "start": 113.283,
+  "end": 114.312,
+  "target": "video-overlay",
+  "type": "SATELLITE",
+  "zoom": 1,
+  "lat": "-21.588396704794555",
+  "lng": "-77.41356124999999",
+  "location": "",
+  "heading": "",
+  "pitch": 1
+});
+popcorn.text({
+  "start": 125.113,
+  "end": 133.92,
+  "target": "video-overlay",
+  "text": "レッシグはリミックス文化についてTEDの講演で「最も大切なことは子供達への影響です。子供達が手に入れた技術によって生み出される『創造に対する本能』を消し去るのは 不可能です。大人達にできるのは、それを犯罪扱いすることだけ」と言っています",
+  "escape": false,
+  "multiline": false
+});
+popcorn.text({
+  "start": 138.711,
+  "end": 141.339,
+  "target": "video",
+  "text": " 【海賊党（Pirate Party）】 2006年スウェーデンで結成。Allemansrätten「自然享受権」を軸に、著作権法の改正、特許の廃止、ファイル共有の無料化、知識の無料／自由化、文化の共有やプライバシー保護などを主張。",
+  "escape": false,
+  "multiline": false
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+</html>

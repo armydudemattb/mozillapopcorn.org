@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "vhttp://www.youtube.com/watch?v=BvVyaw6tw_U&amp;butteruid=1342873345363" , "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.ogv?butteruid=1342873345364" , "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.webm?butteruid=1342873345365" ], {});
+popcorn.pop({
+  "start": 0.011,
+  "end": 4.636,
+  "target": "pop-container",
+  "text": "Oliver likes cars",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 13,
+  "left": "50",
+  "icon": "images/virus.png"
+});
+popcorn.pop({
+  "start": 23,
+  "end": 27.844,
+  "target": "pop-container",
+  "text": "I wish I had a Citroen 2CV",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 3,
+  "left": 2,
+  "icon": "images/money.png"
+});
+popcorn.pop({
+  "start": 21.11,
+  "end": 24,
+  "target": "pop-container",
+  "text": "Dad is good",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": ""
+});
+popcorn.pop({
+  "start": 22.47,
+  "end": 23.47,
+  "target": "pop-container",
+  "text": "My other car is a Skoda",
+  "link": "",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 8,
+  "left": 100,
+  "icon": ""
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

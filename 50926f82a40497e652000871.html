@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=0cuXsxtvVsE&amp;butteruid=1351774090338" ], {});
+popcorn.pop({
+  "start": 8.275,
+  "end": 15.637,
+  "target": "pop-container",
+  "text": "Other recipes using shallots",
+  "link": "http://www.bbc.co.uk/food/shallot",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": "50",
+  "left": "50",
+  "icon": "images/thumbsup.png"
+});
+popcorn.pop({
+  "start": 1.168,
+  "end": 4.625,
+  "target": "pop-container",
+  "text": "Learning to chop: Dicing an onion",
+  "link": "http://www.bbc.co.uk/food/techniques/dicing_onions",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 11,
+  "left": 8,
+  "icon": "images/tv.png"
+});
+popcorn.pop({
+  "start": 19.078,
+  "end": 22.408,
+  "target": "pop-container",
+  "text": "More recipes using garlic",
+  "link": "http://www.bbc.co.uk/food/garlic",
+  "classes": "",
+  "style": "",
+  "align": "",
+  "top": 11,
+  "left": 66,
+  "icon": "images/heart.png"
+});
+popcorn.pop({
+  "start": 3.393,
+  "end": 5.703,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/women.png",
+  "text": "BBC Food - More about Nigella",
+  "left": "70",
+  "top": "40",
+  "link": "http://www.bbc.co.uk/food/chefs/nigella_lawson"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>

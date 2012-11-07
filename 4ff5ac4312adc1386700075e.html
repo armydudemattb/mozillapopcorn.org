@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="http://maker.mozillapopcorn.org/templates/supported/popup/"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Popcorn.js Pop!</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../shared/css/normalise.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="../../../../../external/popcorn-js/popcorn.js"></script>
+
+  <script src="http://maker.mozillapopcorn.org/templates/supported/popup/plugins/popcorn.pop.js"></script>
+</head>
+<body>
+    <div id="video-container" class="video-js-box">
+        <div id="video" class="video-js" data-butter="media"
+          data-butter-media-controls="true"
+          style="width:768px; height:432px;"></div>
+        <div id="pop-container" data-butter="target"></div>
+    </div>
+
+<script type="application/butter-custom-data">
+{}
+</script><script>
+(function(){
+var popcorn = Popcorn.smart("#video", [ "http://www.youtube.com/watch?v=Sc6zc8KR_NU&feature=relmfu&butteruid=1341513611953" , "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.ogv?butteruid=1341513611954" , "http://videos-cdn.mozilla.net/serv/webmademovies/makecorn.webm?butteruid=1341513611955" ], {});
+popcorn.pop({
+  "start": 91.9,
+  "end": 122.15,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/error.png",
+  "text": "Go to New Math Done Right blog for more on this topic \nand for Peano Axioms education materials\n",
+  "left": "70",
+  "top": "40",
+  "link": "http://newmathdoneright.com/"
+});
+popcorn.pop({
+  "start": 45.312,
+  "end": 80.37,
+  "target": "pop-container",
+  "exit": 0.3,
+  "text": "Symbol S is used for stock price in the equation and for the strike price kink point on stock price axis.  Stock price and share price are the same.  Strike price is usually denoted by K.",
+  "icon": "images/heart.png",
+  "left": "30",
+  "top": "70"
+});
+popcorn.pop({
+  "start": 1,
+  "end": 30.067,
+  "target": "pop-container",
+  "exit": 0.3,
+  "left": "30",
+  "top": 52,
+  "icon": "images/thumbsup.png",
+  "text": "Comments by Mark Tenney New Math Done Right",
+  "link": "http://newmathdoneright.com/"
+});
+popcorn.pop({
+  "start": 94.033,
+  "end": 110.1,
+  "target": "pop-container",
+  "exit": 0.3,
+  "icon": "images/money.png",
+  "text": "Used Popcorn Mozilla as suggested by Kate Nowak on her blog \n",
+  "left": "20",
+  "top": 68,
+  "link": "http://function-of-time.blogspot.com/2012/07/mtt2k-and-my-own-version.html"
+});
+popcorn.controls( true );
+}());
+</script>
+</body>
+<!--
+
+Sound credits:
+Pop #1 "MouthPop.wav"
+Credit: Herbert Boland
+URL: http://www.freesound.org/people/HerbertBoland/sounds/33369/
+CC: By
+
+Record Scratch #1 - "scratch23.wav"
+Credit: JaZzy JunGgle
+URL: http://www.freesound.org/people/junggle/sounds/29942/
+CC:  Sample + By
+
+Video Game Blip #1 - "bump.wav"
+Credit: StaneStane
+http://www.freesound.org/people/StaneStane/sounds/73562/
+CC: By
+
+Video Game Death #1 - "tape_slow9.wav"
+Credit: zerolagtime
+URL: http://www.freesound.org/people/zerolagtime/sounds/49246/
+CC: By
+
+-->
+</html>
