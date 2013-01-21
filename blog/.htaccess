@@ -1,1 +1,1 @@
-ErrorDocument 404 http://blog.mozilla.org/popcorn/
+ErrorDocument 301 https://blog.mozilla.org/popcorn/
