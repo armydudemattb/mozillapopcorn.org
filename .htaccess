@@ -1,1 +1,5 @@
-ErrorDocument 301 https://popcorn.webmaker.org/
+ErrorDocument 403 https://popcorn.webmaker.org/
+ErrorDocument 404 https://popcorn.webmaker.org/
+
+RedirectMatch 301 ^/blog https://blog.mozilla.org/popcorn/
+RedirectMatch 301 ^/popocornjs http://popcornjs.org/
